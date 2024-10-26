@@ -48,19 +48,19 @@ const Header = () => {
         <SheetContent className=" flex flex-col items-center justify-center w-[300px]">
             <SheetHeader>
             <SheetDescription className='flex flex-col gap-10'>
-                <Link className={`link ${pathname === '/' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/'}>
+                <Link className={`link ${pathname === '/' ? 'text-[#277A80] font-bold' : 'text-black font-medium hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/'}>
                     Home
                 </Link> 
-                <Link className={`link ${pathname === '/about' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl text-nowrap`} href={'/about'}>
+                <Link className={`link ${pathname === '/about' ? 'text-[#277A80] font-bold' : 'text-black font-medium hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl text-nowrap`} href={'/about'}>
                     About Us
                 </Link> 
-                <Link className={`link ${pathname === '/solutions' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/solutions'}>
+                <Link className={`link ${pathname === '/solutions' ? 'text-[#277A80] font-bold' : 'text-black font-medium hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/solutions'}>
                     Solutions
                 </Link> 
-                <Link className={`link ${pathname === '/products' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/products'}>
+                <Link className={`link ${pathname === '/products' ? 'text-[#277A80] font-bold' : 'text-black font-medium hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/products'}>
                     Products
                 </Link> 
-                <Link className={`link ${pathname === '/contact' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/contact'}>
+                <Link className={`link ${pathname === '/contact' ? 'text-[#277A80] font-bold' : 'text-black font-medium hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/contact'}>
                     Contacts
                 </Link>
             </SheetDescription>
