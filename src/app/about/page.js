@@ -6,7 +6,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <section className="flex flex-col justify-center gap-4">
-      <div className="relative flex items-center justify-between w-full h-screen bg-[url('/images/abouthero.png')]">
+      <div className="relative flex items-center justify-between w-full h-screen bg-[url('/images/abouthero.png')] bg-no-repeat">
         <div className="-z-10 bg-black opacity-70 w-full h-screen absolute top-0"></div>
         <div className="container mx-auto flex flex-col laptop:flex-row w-full justify-center laptop:justify-between items-center gap-14 laptop:gap-0">
           <div className="flex flex-col items-center laptop:items-start gap-4 laptop:gap-6">
@@ -26,7 +26,7 @@ const page = () => {
       </div>
 
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 container mx-auto place-items-center">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 mx-4">
           <AboutCard
             title="WHO WE ARE"
             desc="Welcome to Junapril Solutions Ltd, your trusted partner in IT security consulting, recruitment, and  eCommerce solutions. Established with a commitment to excellence,  Junapril Solutions combines expertise, innovation, and dedication to  deliver unparalleled services to our clients across various industries. We specialize in cutting-edge IT Security and comprehensive health record privacy consulting services. Our aim is to assist enterprises in safeguarding their Information assets and data -  including Patient Health Information (PHI) - through governance and a proactive risk management approach to reduce security risks, improve data protection, ensure compliance with the highest industry standards and laws, such as HIPAA, GDPR, and ISO/IEC 27001, and preserve client confidence."

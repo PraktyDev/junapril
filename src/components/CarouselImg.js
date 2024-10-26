@@ -34,7 +34,7 @@ const CarouselImg = () => {
           <CarouselContent>
             {images.map((image, index) => (
               <CarouselItem key={index}>
-                <Card className="border-2 border-teal-800 bg-transparent shadow-lg">
+                <Card className="bg-transparent border-none shadow-lg">
                   <CardContent className="p-1">
                     <Image
                       src={image.src}

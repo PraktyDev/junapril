@@ -5,7 +5,7 @@ import ServiceCard from "@/components/ServiceCard"
 const page = () => {
   return (
     <section className='flex flex-col justify-center gap-4'>
-        <div className="relative flex items-center justify-center w-full h-screen bg-[url('/images/solutionshero.png')] bg-cover bg-center">
+        <div className="relative flex items-center justify-center w-full h-screen bg-[url('/images/solutionshero.png')] bg-cover bg-center bg-no-repeat">
             <div className="absolute inset-0 bg-black opacity-40"></div>
             <div className='z-10 w-full container mx-auto'>
                 <CarouselImg />
@@ -15,7 +15,7 @@ const page = () => {
                 <p className='text-md laptop:text-lg'>Junapril Solutions offers comprehensive IT audit services...</p>
             </div>
         </div>
-        <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between mx-auto tablet:mx-10'>
+        <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between place-items-center mx-4 tablet:mx-10'>
             <ServiceCard src='/images/itconsult.png' title='IT CONSULTING' desc='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats. Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />
             <ServiceCard src='/images/itconsult.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
             <ServiceCard src='/images/itconsult.png' title='COMPLIANCE CONSULTING' desc='Compliance Consulting helps organizations navigate regulatory requirements, manage risk and ensure adherence to laws and standards.' />

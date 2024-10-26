@@ -22,36 +22,36 @@ const page = () => {
         <ImageCard src='/images/ecom.png' text='E-COMMERCE' alt='ecommerce' />
       </div>
 
-      <div className="w-full h-screen bg-[url('/images/text.jpg')]">
-        <div className='w-[500px] mb-14 flex items-center justify-center shadow-sm rounded-sm ml-5 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40'>
+      <div className="w-full flex flex-col items-center laptop:items-start justify-between h-screen bg-[url('/images/text.jpg')] bg-no-repeat">
+        <div className='w-full laptop:w-[500px] mb-16 flex items-center justify-center shadow-sm rounded-sm laptop:ml-5 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40'>
           <p className='text-white text-center text-lg laptop:text-xl font-bold py-4'>OUR SERVICES</p>
         </div>
 
-        <div className='flex flex-col gap-14 ml-5'>
-          <div className='w-[500px] flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
+        <div className='laptop:ml-5 flex flex-col w-[450px] tablet:w-[500px] space-y-16 mb-16'>
+          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
             <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>IT CONSULTING</p>
             <ArrowRightCircleIcon className='basis-1/3'/>
           </div>
-          <div className='w-[500px] flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
+          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
             <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>RECRUITMENT</p>
             <ArrowRightCircleIcon className='basis-1/3'/>
           </div>
-          <div className='w-[500px] flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
+          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
             <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>TRAINING</p>
             <ArrowRightCircleIcon className='basis-1/3'/>
           </div>
-          <div className='w-[500px] flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
+          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
             <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>E-COMMERCE SOLUTION</p>
             <ArrowRightCircleIcon className='basis-1/3'/>
           </div>
-          <div className='w-[500px] flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
+          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
             <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>HEALTH RECORD PRIVACY</p>
             <ArrowRightCircleIcon className='basis-1/3'/>
           </div>
         </div>
       </div>
 
-      <div className='grid grid-cols-1 laptop:grid-cols-2 gap-4 justify-between mx-auto tablet:mx-40'>
+      <div className='grid grid-cols-1 laptop:grid-cols-2 gap-4 place-items-center tablet:mx-40'>
         <ServiceCard src='/images/itconsult.png' title='IT CONSULTING' desc='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats. Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />
         <ServiceCard src='/images/itconsult.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
         <ServiceCard src='/images/itconsult.png' title='COMPLIANCE CONSULTING' desc='Compliance Consulting helps organizations navigate regulatory requirements, manage risk and ensure adherence to laws and standards.' />
