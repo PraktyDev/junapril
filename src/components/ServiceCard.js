@@ -1,6 +1,5 @@
 import {
     Card,
-    CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
@@ -24,7 +23,7 @@ const ServiceCard = ({ src, title, desc}) => {
         </div>
         <CardHeader className='flex flex-col'>
             <CardTitle>{title}</CardTitle>
-            <CardDescription className='text-white text-justify leading-5'>{desc}</CardDescription>
+            <CardDescription className='text-white text-justify leading-5 laptop:leading-6'>{desc}</CardDescription>
         </CardHeader>
         <CardFooter className='absolute bottom-0 left-0'>
             <Button className='bg-white text-black hover:text-white'>Learn More</Button>

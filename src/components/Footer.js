@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Subscription from './Subscription'
 import { FaFacebook } from "react-icons/fa"
 import { FaSquareXTwitter } from "react-icons/fa6"
-import { RiInstagramFill } from "react-icons/ri"
+import { RiInstagramFill, RiWhatsappLine } from "react-icons/ri"
 import Image from 'next/image'
 
 
@@ -14,6 +14,9 @@ const Footer = () => {
                 <Subscription />
             </div>
             <div className='flex gap-16 laptop:mr-20'>
+                <Link href={'https://wa.link/wdgpv6'} className='hover:opacity-85'>
+                    <RiWhatsappLine color='green' size={30} />
+                </Link>
                 <Link href={''} className='hover:opacity-85'>
                     <FaFacebook color='blue' size={30} />
                 </Link>
@@ -39,7 +42,7 @@ const Footer = () => {
             <div className='flex justify-between w-full gap-14'>
                 <div className='flex flex-col gap-2 w-[368px]'>
                     <h1 className='font-bold text-lg'>Head Office</h1>
-                    <p className='text-md'>1225 Kennedy Road, Suite 2000, Scarborough, ON M1P 4Y1</p>
+                    <p className='text-md'>1225 Kennedy Road, Suite 2000, Scarborough, ON M1P 4Y1, Canada</p>
                     <Link href={'mailto:info@junapril.com'} >
                         <p className='text-sm text-blue-500 hover:text-blue-400'>info@junapril.com</p>
                     </Link>

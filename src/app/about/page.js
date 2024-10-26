@@ -16,7 +16,7 @@ const page = () => {
         <div className="bg-black opacity-20 w-full h-screen absolute top-0"></div>
         <div className="container mx-auto flex flex-col laptop:flex-row w-full justify-center laptop:justify-between items-center gap-14 laptop:gap-0">
           <div className="z-10 flex flex-col items-center laptop:items-start gap-4 laptop:gap-6">
-            <Separator className="bg-white rounded-lg w-28 laptop:w-36 h-1 laptop:h-2" />
+            <Separator className="bg-white rounded-lg w-20 laptop:w-36 h-1 laptop:h-2" />
             <h1 className="text-5xl laptop:text-6xl text-center laptop:text-left  text-white">
               <span className="font-bold">Skilled</span> <br />
               Recruiters
