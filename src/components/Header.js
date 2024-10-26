@@ -17,9 +17,9 @@ const Header = () => {
     const pathname = usePathname();
     
   return (
-    <div className='z-50 flex justify-between items-center px-4 laptop:px-5 w-full sticky top-0 h-14 tablet:h-16 bg-[#FFFEFE] shadow-md'>
-      <Link href={'/'} className='bg-[#277A80] h-14 tablet:h-16 pl-5 pr-5 flex justify-end'>
-        <Image src={'/images/junapril.png'} width={100} height={100} alt='junapril logo' className="z-50 object-cover w-auto h-auto" />
+    <div className='z-50 flex justify-between items-center px-4 laptop:px-5 w-full sticky top-0 h-14 laptop:h-14 bg-[#FFFEFE] shadow-md'>
+      <Link href={'/'} className='bg-[#277A80] h-10 laptop:h-14 px-3 laptop:px-5 flex justify-end rounded-md laptop:rounded-none py-1 laptop:py-0'>
+        <Image src={'/images/junapril.png'} width={100} height={100} alt='junapril logo' className="z-50 object-fill laptop:object-cover w-full laptop:w-auto h-auto" />
       </Link>
 
       <div className='hidden laptop:block space-x-4'>
@@ -42,8 +42,8 @@ const Header = () => {
 
         <div className='block laptop:hidden'>
       <Sheet>
-        <SheetTrigger>
-            <Menu className='h-12 w-12 hover:text-[#277A80]' />
+        <SheetTrigger className='flex items-center'>
+            <Menu className='h-8 w-8 hover:text-[#277A80]' />
         </SheetTrigger>
         <SheetContent className=" flex flex-col items-center justify-center w-[300px]">
             <SheetHeader>
