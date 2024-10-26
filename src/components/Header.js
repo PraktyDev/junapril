@@ -17,7 +17,7 @@ const Header = () => {
     const pathname = usePathname();
     
   return (
-    <div className='z-50 flex justify-between items-center px-3 laptop:px-5 w-full sticky top-0 h-14 tablet:h-16 bg-[#FFFEFE] shadow-md'>
+    <div className='z-50 flex justify-between items-center px-4 laptop:px-5 w-full sticky top-0 h-14 tablet:h-16 bg-[#FFFEFE] shadow-md'>
       <Link href={'/'} className='bg-[#277A80] h-14 tablet:h-16 pl-5 pr-5 flex justify-end'>
         <Image src={'/images/junapril.png'} width={100} height={100} alt='junapril logo' className="z-50 object-cover w-auto h-auto" />
       </Link>
@@ -43,7 +43,7 @@ const Header = () => {
         <div className='block laptop:hidden'>
       <Sheet>
         <SheetTrigger>
-            <Menu className='h-10 w-10 hover:text-[#277A80]' />
+            <Menu className='h-12 w-12 hover:text-[#277A80]' />
         </SheetTrigger>
         <SheetContent className=" flex flex-col items-center justify-center w-[300px]">
             <SheetHeader>

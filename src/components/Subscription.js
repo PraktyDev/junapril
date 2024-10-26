@@ -1,13 +1,76 @@
-import { Button } from "./ui/button"
-import { Input } from "./ui/input"
+"use client"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
+import { Button } from "@/components/ui/button"
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import { useEffect } from "react"
+import axios from "axios"
+import { toast } from "sonner"
+import { Oval  } from 'react-loader-spinner'
 
+
+const formSchema = z.object({
+    email: z.string().email({ message: "Invalid email address" }),
+  })
+  
 
 const Subscription = () => {
+    const form = useForm({
+        resolver: zodResolver(formSchema),
+        defaultValues: {
+          email: '',
+        },
+      })
+      
+      const { reset } = form
+      const { isDirty, isValid, isSubmitting, isSubmitSuccessful } = form.formState
+     
+      const onSubmit = async (values) => {
+        try {
+        //   await axios.post(`endpoint`, values)
+          toast('Subcribed', values)
+        } catch (error) {
+          toast("Couldn't subscribe, try again later")
+        }
+      }
+    
+      useEffect(()=>{
+        if(isSubmitSuccessful){
+          reset()
+        }
+      },[isSubmitSuccessful, reset])
+
   return (
-    <div className='flex items-center'>
-        <Input placeholder='Your Email Address' className='bg-white rounded-none'  />
-        <Button className='bg-[#277A80] rounded-none'>Subscribe</Button>
-    </div>
+    <Form {...form}>
+    <form onSubmit={form.handleSubmit(onSubmit)} className="flex items-center">
+      <FormField
+        control={form.control}
+        name="email"
+        render={({ field }) => (
+          <FormItem>
+            <FormControl>
+              <Input className='bg-white rounded-none' placeholder="Your Email Address" {...field} />
+            </FormControl>
+            <FormMessage />
+          </FormItem>
+        )}
+      />
+      <Button className='bg-[#277A80] rounded-none' type="submit" disabled={!isDirty || !isValid} >
+          {isSubmitting 
+          ? <div className="flex gap-3 items-center justify-center"><Oval visible={true} height="18" width="18" color="white" ariaLabel="oval-loading" /> <p>Subcribing...</p></div>
+          : <div>Subscribe</div>
+          }
+      </Button>
+    </form>
+  </Form>
   )
 }
 

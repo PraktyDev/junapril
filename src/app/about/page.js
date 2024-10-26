@@ -12,12 +12,12 @@ import {
 const page = () => {
   return (
     <section className="flex flex-col justify-center gap-4">
-      <div className="relative flex items-center justify-between w-full h-screen bg-[url('/images/abouthero.png')] bg-no-repeat">
-        <div className="-z-10 bg-black opacity-70 w-full h-screen absolute top-0"></div>
+      <div className="relative flex items-center justify-between w-full h-screen bg-[url('/images/aboutheroimg.png')] bg-no-repeat">
+        <div className="bg-black opacity-20 w-full h-screen absolute top-0"></div>
         <div className="container mx-auto flex flex-col laptop:flex-row w-full justify-center laptop:justify-between items-center gap-14 laptop:gap-0">
-          <div className="flex flex-col items-center laptop:items-start gap-4 laptop:gap-6">
+          <div className="z-10 flex flex-col items-center laptop:items-start gap-4 laptop:gap-6">
             <Separator className="bg-white rounded-lg w-28 laptop:w-36 h-1 laptop:h-2" />
-            <h1 className="z-10 text-5xl laptop:text-6xl text-center laptop:text-left  text-white">
+            <h1 className="text-5xl laptop:text-6xl text-center laptop:text-left  text-white">
               <span className="font-bold">Skilled</span> <br />
               Recruiters
             </h1>
