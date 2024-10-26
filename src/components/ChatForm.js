@@ -39,7 +39,7 @@ export default function ChatForm() {
   const onSubmit = async (values) => {
     try {
     //   await axios.post(`endpoint`, values)
-      toast('Message sent')
+      toast('Message sent', values)
     } catch (error) {
       toast("Couldn't send, try again later")
     }

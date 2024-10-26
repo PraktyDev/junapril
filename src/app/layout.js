@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <div className='z-50 fixed bottom-8 right-8'>
+        <div className='z-50 fixed bottom-4 right-4 bg-black p-1 rounded-full bg-opacity-20'>
           <ChatBox />
         </div>
         <Toaster />

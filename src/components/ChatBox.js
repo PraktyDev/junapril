@@ -12,7 +12,7 @@ const ChatBox = () => {
   return (
     <Dialog className=''>
       <DialogTrigger asChild>
-        <div className='transition-transform duration-700 ease-in-out transform scale-95 hover:scale-110 w-14 h-14 flex items-center justify-center bg-teal-500 rounded-full p-2'>
+        <div className='transition-transform duration-700 ease-in-out transform scale-95 hover:scale-110 w-10 h-10 flex items-center justify-center bg-teal-500 rounded-full p-2'>
             <RiChat1Line color='blue' className='w-8 h-8' />
         </div>
       </DialogTrigger>

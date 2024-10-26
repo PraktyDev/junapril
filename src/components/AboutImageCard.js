@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const AboutImageCard = ({src, text, alt}) => {
   return (
-    <div className="relative w-56 bg-teal-700 laptop:w-60 h-56 laptop:h-60 overflow-hidden rounded-tl-2xl rounded-br-2xl border-r-8 border-b-4 border-teal-800 group">
+    <div className="relative w-56 bg-teal-700 laptop:w-96 h-56 laptop:h-60 overflow-hidden rounded-tl-2xl rounded-br-2xl border-r-8 border-b-4 border-teal-800 group">
       <div className="absolute inset-0 transition-transform duration-700 ease-in-out transform scale-110 group-hover:scale-100">
         <Image
           src={src}

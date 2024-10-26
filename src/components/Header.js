@@ -17,7 +17,7 @@ const Header = () => {
     const pathname = usePathname();
     
   return (
-    <div className='z-50 flex justify-between items-center px-3 laptop:px-10 w-full sticky top-0 h-16 tablet:h-20 bg-[#FFFEFE] shadow-md'>
+    <div className='z-50 flex justify-between items-center px-3 laptop:px-5 w-full sticky top-0 h-14 tablet:h-16 bg-[#FFFEFE] shadow-md'>
       <Link href={'/'} className='bg-[#277A80] h-14 tablet:h-16 pl-5 pr-5 flex justify-end'>
         <Image src={'/images/junapril.png'} width={100} height={100} alt='junapril logo' className="z-50 object-cover w-auto h-auto" />
       </Link>
@@ -43,24 +43,24 @@ const Header = () => {
         <div className='block laptop:hidden'>
       <Sheet>
         <SheetTrigger>
-            <Menu className='h-12 w-12 hover:text-[#277A80]' />
+            <Menu className='h-10 w-10 hover:text-[#277A80]' />
         </SheetTrigger>
-        <SheetContent className=" flex flex-col items-center justify-center">
+        <SheetContent className=" flex flex-col items-center justify-center w-[300px]">
             <SheetHeader>
             <SheetDescription className='flex flex-col gap-10'>
-                <Link className={`link ${pathname === '/' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80]'} text-2xl tablet:text-3xl`} href={'/'}>
+                <Link className={`link ${pathname === '/' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/'}>
                     Home
                 </Link> 
-                <Link className={`link ${pathname === '/about' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80]'} text-2xl tablet:text-3xl text-nowrap`} href={'/about'}>
+                <Link className={`link ${pathname === '/about' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl text-nowrap`} href={'/about'}>
                     About Us
                 </Link> 
-                <Link className={`link ${pathname === '/solutions' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80]'} text-2xl tablet:text-3xl`} href={'/solutions'}>
+                <Link className={`link ${pathname === '/solutions' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/solutions'}>
                     Solutions
                 </Link> 
-                <Link className={`link ${pathname === '/products' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80]'} text-2xl tablet:text-3xl`} href={'/products'}>
+                <Link className={`link ${pathname === '/products' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/products'}>
                     Products
                 </Link> 
-                <Link className={`link ${pathname === '/contact' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80]'} text-2xl tablet:text-3xl`} href={'/contact'}>
+                <Link className={`link ${pathname === '/contact' ? 'text-[#277A80] font-bold' : 'text-black font-thin hover:text-[#277A80] hover:font-semibold'} text-2xl tablet:text-3xl`} href={'/contact'}>
                     Contacts
                 </Link>
             </SheetDescription>
