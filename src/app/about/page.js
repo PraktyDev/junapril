@@ -37,7 +37,7 @@ const page = () => {
             title="WHO WE ARE"
             desc="Welcome to Junapril Solutions Ltd, your trusted partner in IT security consulting, recruitment, and  eCommerce solutions. Established with a commitment to excellence,  Junapril Solutions combines expertise, innovation, and dedication to  deliver unparalleled services to our clients across various industries. We specialize in cutting-edge IT Security and comprehensive health record privacy consulting services. Our aim is to assist enterprises in safeguarding their Information assets and data -  including Patient Health Information (PHI) - through governance and a proactive risk management approach to reduce security risks, improve data protection, ensure compliance with the highest industry standards and laws, such as HIPAA, GDPR, and ISO/IEC 27001, and preserve client confidence."
           />
-            <Card className='flex flex-col justify-between h-[400px] rounded-sm'>
+            <Card className='flex flex-col justify-between h-auto laptop:h-[400px] rounded-sm'>
                 <CardHeader className='flex flex-col gap-4'>
                     <CardTitle className='text-center text-white uppercase py-4 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 rounded-md'>Our Industry Expertise</CardTitle>
                     <CardDescription className='text-justify'>
@@ -45,7 +45,7 @@ const page = () => {
                     </CardDescription>
                 </CardHeader>
             </Card>
-            <Card className='flex flex-col justify-between h-[400px] rounded-sm'>
+            <Card className='flex flex-col justify-between h-auto laptop:h-[400px] rounded-sm'>
                 <CardHeader className='flex flex-col gap-4'>
                     <CardTitle className='text-center text-white uppercase py-4 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 rounded-md'>Why Work with Junapril Solutions?</CardTitle>
                     <CardDescription className='text-justify'>

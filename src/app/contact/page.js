@@ -8,6 +8,7 @@ import {
 import Link from "next/link"
 import GetInTouch from '@/components/GetInTouch'
 import ContactForm from '@/components/ContactForm'
+import { RiWhatsappLine } from "react-icons/ri"
 
 const page = () => {
   return (
@@ -15,7 +16,10 @@ const page = () => {
       <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/contacthero.png')] bg-no-repeat">
           <div className='bg-[#277A80] opacity-40 w-full h-[737px] absolute top-0'></div>
           <div className='z-10 container flex flex-col items-center justify-center gap-10'>
-            <div className='text-lg bg-[#277A80] rounded-sm py-2 px-10 shadow-md text-white cursor-default'>Speak with an Expert</div>
+            <Link href={'https://wa.link/wdgpv6'} className='bg-[#277A80] hover:bg-opacity-90 text-white hover:text-green-300 rounded-sm py-2 px-10 shadow-md flex gap-3 items-center justify-center'>
+              <RiWhatsappLine size={20} />
+              <span className='text-lg'>Speak with an Expert</span>
+            </Link>
             <div className='text-3xl bg-[#709A9D] rounded-sm py-4 px-20 laptop:px-28 opacity-70 cursor-default shadow-md text-white font-bold'>Contact Us</div>
           </div>
       </div>
