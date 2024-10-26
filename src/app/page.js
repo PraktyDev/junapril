@@ -6,8 +6,8 @@ import Link from "next/link"
 const page = () => {
   return (
     <section className='flex flex-col justify-center gap-4 w-full'>
-      <div className="relative flex items-center justify-center laptop:justify-end w-full h-screen bg-[url('/images/homehero.png')] bg-no-repeat">
-          <div className='bg-[#277A80] opacity-40 w-full h-full absolute top-0'></div>
+      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[800px] bg-[url('/images/homehero.png')] bg-no-repeat">
+          <div className='bg-[#277A80] opacity-40 w-full h-[800px] absolute top-0'></div>
           <div className='z-10 flex flex-col justify-center laptop:items-end laptop:pr-10 items-center gap-14 '> 
             <h1 className='text-4xl tablet:text-5xl laptop:text-6xl text-white text-center font-bold'>Welcome <br />to <br />Junapril Solutions Ltd</h1>
             <p className='laptop:-mt-8 mx-4 tablet:mx-0 text-md laptop:text-lg text-center font-semibold text-white'>Your trusted partner in IT security consulting, recruitment, and eCommerce solutions.</p>
