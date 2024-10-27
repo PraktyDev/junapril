@@ -1,6 +1,5 @@
 import AboutCard from "@/components/AboutCard";
 import AboutImageCard from "@/components/AboutImageCard";
-import { Separator } from "@radix-ui/react-separator";
 import Link from "next/link";
 import {
     Card,
@@ -8,6 +7,7 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator";
 
 const page = () => {
   return (

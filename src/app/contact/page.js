@@ -16,11 +16,11 @@ const page = () => {
       <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/contacthero.png')] bg-no-repeat">
           <div className='bg-[#277A80] opacity-40 w-full h-[737px] absolute top-0'></div>
           <div className='z-10 container flex flex-col items-center justify-center gap-10'>
-            <Link href={'https://wa.link/wdgpv6'} className='bg-[#277A80] hover:bg-opacity-90 text-white hover:text-green-300 rounded-sm py-2 px-10 shadow-md flex gap-3 items-center justify-center'>
+            <Link href={'https://wa.link/wdgpv6'} className='bg-[#277A80] hover:bg-opacity-90 text-white hover:text-green-300 rounded-sm py-2 px-10 shadow-lg flex gap-3 items-center justify-center'>
               <RiWhatsappLine size={20} />
               <span className='text-lg'>Speak with an Expert</span>
             </Link>
-            <div className='text-3xl bg-[#709A9D] rounded-sm py-4 px-20 laptop:px-28 opacity-70 cursor-default shadow-md text-white font-bold'>Contact Us</div>
+            <div className='text-3xl bg-[#709A9D] rounded-sm py-4 px-20 laptop:px-28 cursor-default shadow-lg text-white font-bold'>Contact Us</div>
           </div>
       </div>
 
