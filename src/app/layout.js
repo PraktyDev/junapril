@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <div className='z-50 fixed bottom-6 right-20'>
+        <div className='z-50 fixed bottom-20 right-6'>
           <ScrollTop />
         </div>
         <div className='z-50 fixed bottom-4 right-4 bg-black p-1 rounded-full bg-opacity-20'>

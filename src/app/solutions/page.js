@@ -1,5 +1,6 @@
 import CarouselImg from "@/components/CarouselImg"
 import ServiceCard from "@/components/ServiceCard"
+import { Separator } from "@/components/ui/separator"
 
 
 const page = () => {
@@ -20,6 +21,21 @@ const page = () => {
             <ServiceCard src='/images/itconsult.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
             <ServiceCard src='/images/itconsult.png' title='COMPLIANCE CONSULTING' desc='Compliance Consulting helps organizations navigate regulatory requirements, manage risk and ensure adherence to laws and standards.' />
             <ServiceCard src='/images/itconsult.png' title='RECRUITMENT' desc='Recruitment is the process of finding, attracting and selecting the best candidates for a job opening.' />
+        </div>
+
+        <div className='w-full bg-[#277A80] text-white flex flex-col gap-1 py-4 items-center text-center'>
+            <p className='uppercase text=center rounded-lg bg-[#474040] mx-auto py-1 px-10 laptop:px-20 flex items-center justify-center text-nowrap'>Why Work with Junapril Solutions?</p>
+            <div className='flex flex-col max-w-2xl gap-3 mx-2 tablet:mx-auto'>
+                <p className='text-center'><span className='font-semibold'>Expertise: </span>Our team brings a wealth of knowledge and experience to every project, ensuring exceptional results.</p>
+                <p className='text-center'><span className='font-semibold'>Innovation: </span>We stay ahead of the curve by embracing emerging technologies and best practices in the field of IT security and eCommerce.</p>
+                <p className='text-center'><span className='font-semibold'>Client-Centric Approach: </span>Your success is our top priority, and we are committed to delivering solutions that meet your unique </p>
+            </div>
+        </div>
+
+        <div className='w-full bg-[#D9D9D9] text-white flex flex-col gap-1 py-6 -mb-5 items-center text-center'>
+            <Separator className="bg-black rounded-full w-20 h-1" />
+            <span className='uppercase text-black font-semibold'>Our Solution</span>
+            <span className='text-black max-w-2xl mx-auto'>Access expertise that enables you to simplify, scale, and level up your security posture no matter where you are on your security maturity journey.</span>
         </div>
     </section>
   )
