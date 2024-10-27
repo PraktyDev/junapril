@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ChatBox from "@/components/ChatBox";
 import { Toaster } from "@/components/ui/sonner";
+import ScrollTop from "@/components/ScrollTop";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,6 +31,9 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <div className='z-50 fixed bottom-6 right-20'>
+          <ScrollTop />
+        </div>
         <div className='z-50 fixed bottom-4 right-4 bg-black p-1 rounded-full bg-opacity-20'>
           <ChatBox />
         </div>
