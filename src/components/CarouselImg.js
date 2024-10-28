@@ -17,11 +17,11 @@ const CarouselImg = () => {
       )
 
     const images =[
-        { src: '/images/ecom.png' },
-        { src: '/images/abouthero.png' },
-        { src: '/images/itrec.png' },
-        { src: '/images/ithpr.png' },
-        { src: '/images/itecom.png' },
+        { src: '/images/producthero.png' },
+        { src: '/images/solutionshero.png' },
+        { src: '/images/contacthero.png' },
+        { src: '/images/aboutheroimg.png' },
+        { src: '/images/homehero.png' },
     ]
 
   return (

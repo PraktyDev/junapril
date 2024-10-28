@@ -9,8 +9,8 @@ import Image from 'next/image'
 
 const SolutionCard = ({ src, title, desc}) => {
   return (
-    <Card  className='relative flex flex-col h-auto bg-white text-white rounded-sm justify-between'>
-        <div className="w-auto h-48 inset-0 transition-transform duration-700 ease-in-out transform scale-100 hover:scale-95">
+    <Card  className='relative flex flex-col h-auto bg-[#D9D9D9] grow rounded-sm'>
+        <div className="w-auto h-60 inset-0 transition-transform duration-700 ease-in-out transform scale-100 hover:scale-95">
             <Image
                 src={src}
                 alt='service image'
@@ -20,8 +20,8 @@ const SolutionCard = ({ src, title, desc}) => {
             />
         </div>
         <CardHeader className='flex flex-col'>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription className='text-white text-justify leading-5 laptop:leading-6'>{desc}</CardDescription>
+            <CardTitle className='text-black font-semibold'>{title}</CardTitle>
+            <CardDescription className='text-black text-justify leading-5 laptop:leading-6'>{desc}</CardDescription>
         </CardHeader>
     </Card>
   )
