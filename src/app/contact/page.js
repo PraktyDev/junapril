@@ -8,6 +8,7 @@ import {
 import Link from "next/link"
 import GetInTouch from '@/components/GetInTouch'
 import ContactForm from '@/components/ContactForm'
+import Review from '@/components/Review'
 import { RiWhatsappLine } from "react-icons/ri"
 
 const page = () => {
@@ -56,10 +57,8 @@ const page = () => {
         </div>
       </div>
 
-      <div className='max-w-3xl mx-2 my-10 tablet:mx-auto text-center text-md font-semibold'>
-        "From day One, Junapril took time to fully understand our practice and how we deliver services to our clients.
-         This was reflected in both the hands on structuring of our New Compliance Program and the Development of New Policies and Procedures
-          of our Staff"
+      <div className='max-w-3xl mx-2 my-6 tablet:my-10 tablet:mx-auto'>
+        <Review />
       </div>
     </section>
   )

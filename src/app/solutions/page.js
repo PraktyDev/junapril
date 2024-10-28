@@ -1,5 +1,5 @@
 import CarouselImg from "@/components/CarouselImg"
-import ServiceCard from "@/components/ServiceCard"
+import SolutionServiceCard from "@/components/SolutionServiceCard"
 import SolutionCard from "@/components/SolutionCard"
 import { Separator } from "@/components/ui/separator"
 
@@ -19,10 +19,10 @@ const page = () => {
         </div>
 
         <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between place-items-center mx-4 tablet:mx-10'>
-            <ServiceCard src='/images/card1.png' title='IT CONSULTING' desc='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats. Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />
-            <ServiceCard src='/images/hprc.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
-            <ServiceCard src='/images/cc.png' title='COMPLIANCE CONSULTING' desc='Compliance Consulting helps organizations navigate regulatory requirements, manage risk and ensure adherence to laws and standards.' />
-            <ServiceCard src='/images/rct.png' title='RECRUITMENT' desc='Recruitment is the process of finding, attracting and selecting the best candidates for a job opening.' />
+            <SolutionServiceCard src='/images/card1.png' title='IT SECURITIES CONSULTING' desc='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats. Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />
+            <SolutionServiceCard src='/images/hprc.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
+            <SolutionServiceCard src='/images/cc.png' title='COMPLIANCE CONSULTING' desc='Compliance Consulting helps organizations navigate regulatory requirements, manage risk and ensure adherence to laws and standards.' />
+            <SolutionServiceCard src='/images/rct.png' title='RECRUITMENT' desc='Recruitment is the process of finding, attracting and selecting the best candidates for a job opening.' />
         </div>
 
         <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-4 mx-4'>
