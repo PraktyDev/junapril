@@ -1,6 +1,6 @@
 import ImageCard from "@/components/ImageCard"
 import ServiceCard from "@/components/ServiceCard"
-import { ArrowRightCircleIcon } from "lucide-react"
+import ServiceLinks from "@/components/ServiceLinks"
 import Link from "next/link"
 
 const page = () => {
@@ -29,26 +29,11 @@ const page = () => {
         </div>
 
         <div className='z-10 laptop:ml-5 flex flex-col w-[450px] tablet:w-[500px] space-y-8'>
-          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
-            <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>IT CONSULTING</p>
-            <ArrowRightCircleIcon className='basis-1/3'/>
-          </div>
-          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
-            <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>RECRUITMENT</p>
-            <ArrowRightCircleIcon className='basis-1/3'/>
-          </div>
-          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
-            <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>TRAINING</p>
-            <ArrowRightCircleIcon className='basis-1/3'/>
-          </div>
-          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
-            <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>E-COMMERCE SOLUTION</p>
-            <ArrowRightCircleIcon className='basis-1/3'/>
-          </div>
-          <div className='flex items-center justify-between shadow-sm rounded-sm pl-20 bg-white hover:bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 transition-all duration-1000 hover:ease-in-out'>
-            <p className='text-black text-left text-lg laptop:text-xl font-bold py-4 basis-2/3'>HEALTH RECORD PRIVACY</p>
-            <ArrowRightCircleIcon className='basis-1/3'/>
-          </div>
+          <ServiceLinks title='IT CONSULTING' content='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats.Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />
+          <ServiceLinks title='RECRUITMENT' content='Finding the right talent is essential for the success of any organization. With our extensive network and industry expertise, Junapril Solutions specializes in recruiting top-tier IT security professionals who possess the skills and expertise needed to drive your organization forward.' />
+          <ServiceLinks title='TRAINING' content="Stay ahead of the curve with our cutting-edge training programs designed to empower your team with the knowledge and skills necessary to navigate today's complex IT security landscape. From cybersecurity fundamentals to advanced threat detection techniques, our training courses are tailored to address the specific needs of your organization." />
+          <ServiceLinks title='E-COMMERCE SOLUTION' content="In an increasingly digital world, eCommerce has become essential for businesses looking to expand their reach and increase revenue. Junapril Solutions offers comprehensive eCommerce solutions, including website development, payment gateway integration, and digital marketing services, to help you establish and grow your online presence." />
+          <ServiceLinks title='HEALTH RECORD PRIVACY' content={`Healthcare: Protecting sensitive patient data and ensuring compliance with industry regulations. 1. HIPAA (Health Insurance Portability and Accountability Act) 2. HITECH (Health Information Technology for Economic and Clinical Health) Act. Consultants help implement policies, procedures, and training to safeguard PHI, manage breaches, and ensure compliance.`}  />
         </div>
       </div>
 

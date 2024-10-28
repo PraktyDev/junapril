@@ -7,6 +7,7 @@ import {
   } from "@/components/ui/card"
 import { Button } from "./ui/button"
 import Image from 'next/image'
+import Link from "next/link"
   
 
 const ServiceCard = ({ src, title, desc}) => {
@@ -26,7 +27,9 @@ const ServiceCard = ({ src, title, desc}) => {
             <CardDescription className='text-white text-justify leading-5 laptop:leading-6'>{desc}</CardDescription>
         </CardHeader>
         <CardFooter className=''>
+          <Link  href={'/solutions'}>
             <Button className='bg-white text-black hover:text-white'>Learn More</Button>
+          </Link>
         </CardFooter>
     </Card>
   )
