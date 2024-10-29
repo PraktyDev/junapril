@@ -1,20 +1,48 @@
+'use client'
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image"
 import Link from "next/link"
 import { RiWhatsappLine } from "react-icons/ri"
+import { useEffect, useState } from "react"
 
 
 const page = () => {
+
+  const texts = [
+    "IT CONSULTING",
+    "Health Record Privacy ",
+    "TRAINING",
+    "RECRUITMENT",
+    "E-COMMERCE SOLUTION",
+  ];
+
+  const [currentTextIndex, setCurrentTextIndex] = useState(0)
+  const [fade, setFade] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false)
+      setTimeout(() => {
+        setCurrentTextIndex((prev) => (prev + 1) % texts.length)
+        setFade(true)
+      }, 400)
+    }, 5500)
+
+    return () => clearInterval(interval)
+  }, [texts.length]);
+
   return (
     <section className='flex flex-col justify-center gap-4 w-full'>
-      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/producthero.png')] bg-no-repeat">
+      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] animate-productBgSlide bg-no-repeat">
           <div className='bg-[#277A80] opacity-40 w-full h-[737px] absolute top-0'></div>
           <div className='z-10 container mx-auto flex flex-col items-center justify-center gap-10'>
             <Link href={'https://wa.link/wdgpv6'} className='bg-[#277A80] hover:bg-opacity-90 text-white hover:text-green-300 rounded-sm py-2 px-10 shadow-md flex gap-3 items-center justify-center'>
               <RiWhatsappLine size={20} />
               <span className='text-lg'>Speak with an Expert</span>
             </Link>
-            <div className='text-xl laptop:text-2xl bg-[#709A9D] rounded-sm py-4 px-10 text-nowrap laptop:px-20 shadow-lg cursor-default text-white font-bold uppercase'>Health Record Policy</div>
+            <div className={`text-xl laptop:text-2xl bg-[#709A9D] rounded-sm py-4 px-10 text-nowrap laptop:px-20 shadow-lg cursor-default text-white font-bold uppercase transition-opacity duration-500 ${
+                fade ? "opacity-100" : "opacity-0"
+              }`}>{texts[currentTextIndex]}</div>
             <Link href={'/contact'} className='w-40 laptop:w-56 text-nowrap text-center bg-none hover:bg-[#277A80] text-white text-md tablet:text-lg laptop:text-xl border-2 px-2 laptop:px-10 py-1.5 laptop:py-2 border-[#277A80] rounded-xl'>Get in Touch</Link>
           </div>
       </div>

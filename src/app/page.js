@@ -9,7 +9,7 @@ const page = () => {
     const texts = [
       "Welcome to Junapril Solutions Ltd",
       "Compliance Consulting for Business",
-      "Health Privacy Record",
+      "Health Record Privacy ",
     ];
   
     const [currentTextIndex, setCurrentTextIndex] = useState(0)

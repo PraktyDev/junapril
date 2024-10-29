@@ -2,21 +2,24 @@ import CarouselImg from "@/components/CarouselImg"
 import SolutionServiceCard from "@/components/SolutionServiceCard"
 import SolutionCard from "@/components/SolutionCard"
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
 
 const page = () => {
   return (        
     <section className='flex flex-col justify-center gap-4 w-full'>
-        <div className="relative flex items-center justify-center w-full h-[737px] bg-[#277A80]">
-            <div className="absolute inset-0 bg-black h-[737px] opacity-50"></div>
-            <div className='z-10 w-full container mx-1 laptop:mx-auto my-auto bg-white rounded-md'>
-                <CarouselImg />
-            </div> 
-            <div className="text-white z-20 bottom-10 laptop:bottom-20 h-28 w-full absolute bg-[#584747] bg-opacity-90 text-center justify-center items-center flex flex-col gap-4">
-                <h1 className='text-2xl laptop:text-3xl'>IT Audit Services</h1>
-                <p className='text-md laptop:text-lg'>Junapril Solutions offers comprehensive IT audit services...</p>
-            </div>
-        </div>
+      <div className="relative flex items-center laptop:items-end justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/solutionhero.png')] bg-no-repeat">
+          <div className='bg-black opacity-60 w-full h-[737px] absolute top-0'></div>
+          <div className='z-10 w-full laptop:mb-40 container laptop:mx-auto flex flex-col items-center laptop:items-end justify-center gap-10'>
+            <Link
+                href={'/contact'}
+                className="z-10 w-48 laptop:mr-20 laptop:w-56 laptop:justify-end text-nowrap text-center bg-none hover:bg-[#277A80] text-white text-md tablet:text-lg laptop:text-xl border-2 laptop:border-2 px-2 laptop:px-10 py-1.5 laptop:py-2 border-[#277A80] rounded-xl"
+            >
+                Get in Touch
+            </Link>
+            <div className='text-3xl laptop:text-4xl text-center bg-[#1BC9FA] rounded-sm laptop:rounded-lg py-4 laptop:py-8 tablet:max-w-3xl laptop:max-w-6xl w-full mx-auto bg-opacity-50 cursor-default shadow-lg text-black font-bold'>Risk Assessments</div>
+          </div>
+      </div>
 
         <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between place-items-center mx-4 tablet:mx-10'>
             <SolutionServiceCard href='/products/it-consulting' src='/images/card1.png' title='IT SECURITIES CONSULTING' desc='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats. Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />

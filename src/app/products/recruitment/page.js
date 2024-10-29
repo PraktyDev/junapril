@@ -7,7 +7,7 @@ import { RiWhatsappLine } from "react-icons/ri"
 const page = () => {
   return (
     <section className='flex flex-col justify-center gap-4 w-full'>
-      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/producthero.png')] bg-no-repeat">
+      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/productrecruit.png')] bg-no-repeat">
           <div className='bg-[#277A80] opacity-40 w-full h-[737px] absolute top-0'></div>
           <div className='z-10 container mx-auto flex flex-col items-center justify-center gap-10'>
             <Link href={'https://wa.link/wdgpv6'} className='bg-[#277A80] hover:bg-opacity-90 text-white hover:text-green-300 rounded-sm py-2 px-10 shadow-md flex gap-3 items-center justify-center'>

@@ -33,6 +33,37 @@
   transition: opacity 0.5s ease-in-out;
 }
 
+
+@keyframes productBgSlide {
+  0%, 20% {
+    background-image: url('/images/productitconsult.png');
+    opacity: 1;
+  }
+  24%, 41% {
+    background-image: url('/images/producthealth.png');
+    opacity: 1;
+  }
+  45%, 61% {
+    background-image: url('/images/producttrain.png');
+    opacity: 1;
+  }
+  65%, 80% {
+    background-image: url('/images/productrecruit.png');
+    opacity: 1;
+  }
+  87%, 100% {
+    background-image: url('/images/productecommerce.png');
+    opacity: 1;
+  }
+}
+
+.animate-productBgSlide {
+  animation: productBgSlide 30s infinite;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
 @keyframes contactBgSlide {
   0%, 50% {
     background-image: url('/images/contacthero.png');
