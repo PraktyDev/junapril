@@ -14,7 +14,7 @@ import { RiWhatsappLine } from "react-icons/ri"
 const page = () => {
   return (
     <section className='flex flex-col justify-center gap-4 w-full'>
-      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/contacthero.png')] bg-no-repeat">
+      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] bg-no-repeat animate-contactBgSlide">
           <div className='bg-[#277A80] opacity-40 w-full h-[737px] absolute top-0'></div>
           <div className='z-10 container flex flex-col items-center justify-center gap-10'>
             <Link href={'https://wa.link/wdgpv6'} className='bg-[#277A80] hover:bg-opacity-90 text-white hover:text-green-300 rounded-sm py-2 px-10 shadow-lg flex gap-3 items-center justify-center'>
@@ -47,6 +47,7 @@ const page = () => {
         </Card>
       </div>
 
+      {/* <iframe className='w-full h-[450px] border-1 border-black container mx-auto rounded-sm laptop:rounded-lg' src="https://g.co/kgs/DZYFfLv" allowfullscreen></iframe> */}
 
       <div className='flex flex-col laptop:flex-row justify-between container tablet:mx-auto gap-6'>
         <div className='basis-2/3 mx-4'>
