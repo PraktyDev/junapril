@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@keyframes home2BgSlide {
+  0%, 20% {
+    background-image: url('/images/homehero2.png');
+    opacity: 1;
+  }
+  24%, 41% {
+    background-image: url('/images/card1.png');
+    opacity: 1;
+  }
+  45%, 61% {
+    background-image: url('/images/hprc.png');
+    opacity: 1;
+  }
+  65%, 80% {
+    background-image: url('/images/cc.png');
+    opacity: 1;
+  }
+  87%, 100% {
+    background-image: url('/images/rct.png');
+    opacity: 1;
+  }
+}
+
+.animate-home2BgSlide {
+  animation: home2BgSlide 30s infinite;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
