@@ -84,7 +84,7 @@ export default function ChatForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Textarea className="bg-slate-100 rounded-md mb-2" placeholder="Enter your message" {...field} />
+                <Textarea className="bg-slate-100 rounded-md mb-2 h-40" placeholder="Enter your message" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

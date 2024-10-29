@@ -19,10 +19,10 @@ const page = () => {
         </div>
 
         <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between place-items-center mx-4 tablet:mx-10'>
-            <SolutionServiceCard src='/images/card1.png' title='IT SECURITIES CONSULTING' desc='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats. Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />
-            <SolutionServiceCard src='/images/hprc.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
-            <SolutionServiceCard src='/images/cc.png' title='COMPLIANCE CONSULTING' desc='Compliance Consulting helps organizations navigate regulatory requirements, manage risk and ensure adherence to laws and standards.' />
-            <SolutionServiceCard src='/images/rct.png' title='RECRUITMENT' desc='Recruitment is the process of finding, attracting and selecting the best candidates for a job opening.' />
+            <SolutionServiceCard href='/products/it-consulting' src='/images/card1.png' title='IT SECURITIES CONSULTING' desc='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats. Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />
+            <SolutionServiceCard href='/products/health-record-policy' src='/images/hprc.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
+            <SolutionServiceCard href='/products/training' src='/images/cc.png' title='TRAINING' desc='Training in IT Consulting, E-commerce, and Health Record Privacy typically covers...' />
+            <SolutionServiceCard href='/products/recruitment' src='/images/rct.png' title='RECRUITMENT' desc='Recruitment is the process of finding, attracting and selecting the best candidates for a job opening.' />
         </div>
 
         <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-4 mx-4'>
