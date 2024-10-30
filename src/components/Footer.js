@@ -17,13 +17,13 @@ const Footer = () => {
                 <Link href={'https://wa.link/wdgpv6'} className='hover:opacity-85'>
                     <RiWhatsappLine color='green' size={30} />
                 </Link>
-                <Link href={''} className='hover:opacity-85'>
+                <Link href={'https://www.facebook.com'} className='hover:opacity-85'>
                     <FaFacebook color='blue' size={30} />
                 </Link>
-                <Link href={''} className='hover:opacity-85'>
+                <Link href={'https://x.com/Junapril_1?t=84HXvP3Fjz9Xjwe4XhkF1g&s=08'} className='hover:opacity-85'>
                     <FaSquareXTwitter size={30} />
                 </Link>
-                <Link href={''} className='hover:opacity-85'>
+                <Link href={'https://www.instagram.com/junapril_solutions_ltd?igsh=ZWV4cncwcG5vaGRu&utm_source=qr'} className='hover:opacity-85'>
                     <RiInstagramFill className='text-pink-900' size={30} />
                 </Link>
             </div>
