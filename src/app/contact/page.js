@@ -10,6 +10,7 @@ import GetInTouch from '@/components/GetInTouch'
 import ContactForm from '@/components/ContactForm'
 import Review from '@/components/Review'
 import { RiWhatsappLine } from "react-icons/ri"
+import Flicker from '@/components/Flicker'
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
             </Link>
             <div className='text-3xl bg-[#709A9D] rounded-sm py-4 px-20 laptop:px-28 cursor-default shadow-lg text-white font-bold'>Contact Us</div>
           </div>
+          <Flicker text='Contact Us' />
       </div>
 
       <div className='container mx-auto flex items-center justify-center gap-10'>

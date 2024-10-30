@@ -1,4 +1,5 @@
 "use client"
+import Flicker from "@/components/Flicker"
 import ImageCard from "@/components/ImageCard"
 import ServiceCard from "@/components/ServiceCard"
 import ServiceLinks from "@/components/ServiceLinks"
@@ -42,6 +43,7 @@ const page = () => {
             <p className='laptop:-mt-8 mx-4 tablet:mx-0 text-md laptop:text-lg text-center font-semibold text-white'>Your trusted partner in IT security consulting, recruitment, and eCommerce solutions.</p>
             <Link href={'/contact'} className='w-40 laptop:w-56 laptop:-mt-8 text-nowrap text-center bg-none hover:bg-[#277A80] text-white text-md tablet:text-lg laptop:text-xl border-2 px-2 laptop:px-10 py-1.5 laptop:py-2 border-[#277A80] rounded-xl'>Get in Touch</Link>
           </div>
+          <Flicker text='Home' />
       </div>
 
       <div className='grid grid-cols-2 laptop:grid-cols-4 gap-4 justify-center mx-auto'>

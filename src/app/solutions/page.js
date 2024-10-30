@@ -3,6 +3,7 @@ import SolutionServiceCard from "@/components/SolutionServiceCard"
 import SolutionCard from "@/components/SolutionCard"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
+import Flicker from "@/components/Flicker"
 
 
 const page = () => {
@@ -19,6 +20,7 @@ const page = () => {
             </Link>
             <div className='text-3xl laptop:text-4xl text-center bg-[#1BC9FA] rounded-sm laptop:rounded-lg py-4 laptop:py-8 tablet:max-w-3xl laptop:max-w-6xl w-full mx-auto bg-opacity-50 cursor-default shadow-lg text-black font-bold'>Risk Assessments</div>
           </div>
+          <Flicker text='Solutions' />
       </div>
 
         <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between place-items-center mx-4 tablet:mx-10'>

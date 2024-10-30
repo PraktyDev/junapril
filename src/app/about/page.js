@@ -8,6 +8,7 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator";
+import Flicker from "@/components/Flicker";
 
 const page = () => {
   return (
@@ -29,6 +30,7 @@ const page = () => {
             Get in Touch
           </Link>
         </div>
+        <Flicker text='About Us' />
       </div>
 
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 container mx-auto place-items-center">
