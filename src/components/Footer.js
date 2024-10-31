@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Subscription from './Subscription'
-import { FaFacebook } from "react-icons/fa"
 import { FaSquareXTwitter } from "react-icons/fa6"
 import { RiInstagramFill, RiWhatsappLine } from "react-icons/ri"
 import Image from 'next/image'
@@ -16,9 +15,6 @@ const Footer = () => {
             <div className='flex gap-16 laptop:mr-20'>
                 <Link href={'https://wa.link/wdgpv6'} className='hover:opacity-85'>
                     <RiWhatsappLine color='green' size={30} />
-                </Link>
-                <Link href={'https://www.facebook.com'} className='hover:opacity-85'>
-                    <FaFacebook color='blue' size={30} />
                 </Link>
                 <Link href={'https://x.com/Junapril_1?t=84HXvP3Fjz9Xjwe4XhkF1g&s=08'} className='hover:opacity-85'>
                     <FaSquareXTwitter size={30} />

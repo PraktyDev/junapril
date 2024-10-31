@@ -11,6 +11,7 @@ import ContactForm from '@/components/ContactForm'
 import Review from '@/components/Review'
 import { RiWhatsappLine } from "react-icons/ri"
 import Flicker from '@/components/Flicker'
+import GoogleMapComponent from '@/components/Map'
 
 const page = () => {
   return (
@@ -27,7 +28,7 @@ const page = () => {
           <Flicker text='Contact Us' />
       </div>
 
-      <div className='container mx-auto flex items-center justify-center gap-10'>
+      <div className='container mx-auto flex items-center justify-center gap-10 mt-4'>
         <Card className='bg-[#277A80] w-52 laptop:w-60 h-52 laptp:h-60'>
           <CardHeader className='flex flex-col items-center justify-center text-white'>
               <p className="flex items-center justify-center rounded-full p-3 bg-[#044B50]"><MapPin size={36} /></p>
@@ -49,7 +50,7 @@ const page = () => {
         </Card>
       </div>
 
-      {/* <iframe className='w-full h-[450px] border-1 border-black container mx-auto rounded-sm laptop:rounded-lg' src="https://g.co/kgs/DZYFfLv" allowfullscreen></iframe> */}
+      <GoogleMapComponent />
 
       <div className='flex flex-col laptop:flex-row justify-between container tablet:mx-auto gap-6'>
         <div className='basis-2/3 mx-4'>

@@ -1,6 +1,5 @@
-import { CircleCheckBig, TicketMinus } from "lucide-react"
+import { CircleCheckBig } from "lucide-react"
 import Link from "next/link"
-import { FaFacebook } from "react-icons/fa"
 import { FaSquareXTwitter } from "react-icons/fa6"
 import { RiInstagramFill, RiWhatsappLine } from "react-icons/ri"
 
@@ -14,13 +13,10 @@ const GetInTouch = () => {
             <Link href={'https://wa.link/wdgpv6'} className='hover:opacity-85'>
                 <RiWhatsappLine color='green' size={25} />
             </Link>
-            <Link href={''} className='hover:opacity-85'>
-                <FaFacebook color='blue' size={25} />
-            </Link>
-            <Link href={''} className='hover:opacity-85'>
+            <Link href={'https://x.com/Junapril_1?t=84HXvP3Fjz9Xjwe4XhkF1g&s=08'} className='hover:opacity-85'>
                 <FaSquareXTwitter size={25} />
             </Link>
-            <Link href={''} className='hover:opacity-85'>
+            <Link href={'https://www.instagram.com/junapril_solutions_ltd?igsh=ZWV4cncwcG5vaGRu&utm_source=qr'} className='hover:opacity-85'>
                 <RiInstagramFill className='text-pink-900' size={25} />
             </Link>
         </div>
