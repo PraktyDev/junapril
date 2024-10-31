@@ -1,12 +1,38 @@
+"use client"
 import CarouselImg from "@/components/CarouselImg"
 import SolutionServiceCard from "@/components/SolutionServiceCard"
 import SolutionCard from "@/components/SolutionCard"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 import Flicker from "@/components/Flicker"
-
+import { useEffect, useState } from "react"
 
 const page = () => {
+    const texts = [
+        "Risk Assessments",
+        "IT Audits Services",
+        "Securities Awareness & Training",
+        "Remediation Planning & Implementation",
+        "Supply Chain Risk Management",
+        "Technical Writing",
+        "Compliance Framework Implementation",
+      ];
+    
+      const [currentTextIndex, setCurrentTextIndex] = useState(0)
+      const [fade, setFade] = useState(true)
+    
+      useEffect(() => {
+        const interval = setInterval(() => {
+          setFade(false)
+          setTimeout(() => {
+            setCurrentTextIndex((prev) => (prev + 1) % texts.length)
+            setFade(true)
+          }, 300)
+        }, 5000)
+    
+        return () => clearInterval(interval)
+      }, [texts.length]);
+
   return (        
     <section className='flex flex-col justify-center gap-4 w-full'>
       <div className="relative flex items-center laptop:items-end justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/solutionhero.png')] bg-no-repeat">
@@ -18,9 +44,15 @@ const page = () => {
             >
                 Get in Touch
             </Link>
-            <div className='text-3xl laptop:text-4xl text-center bg-[#1BC9FA] rounded-sm laptop:rounded-lg py-4 laptop:py-8 tablet:max-w-3xl laptop:max-w-6xl w-full mx-auto bg-opacity-50 cursor-default shadow-lg text-black font-bold'>Risk Assessments</div>
+            <div className="bg-[#1BC9FA] rounded-sm laptop:rounded-lg py-4 laptop:py-8 tablet:max-w-3xl laptop:max-w-6xl w-full mx-auto bg-opacity-50 cursor-default shadow-lg">
+            <div className={`text-3xl laptop:text-4xl text-center text-black font-bold transition-opacity duration-500 ${
+                fade ? "opacity-100" : "opacity-0"
+              }`}>
+                {texts[currentTextIndex]}
+            </div>
+            </div>
           </div>
-          <Flicker text='Solutions' />
+          <Flicker text='Solutions' /> 
       </div>
 
         <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between place-items-center mx-4 tablet:mx-10'>
