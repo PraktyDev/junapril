@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='w-auto mx-4'>
                 <Subscription />
             </div>
-            <div className='flex gap-16 laptop:mr-20'>
+            <div className='flex gap-4 laptop:mr-20'>
                 <Link href={'https://wa.link/wdgpv6'} className='hover:opacity-85'>
                     <RiWhatsappLine color='green' size={30} />
                 </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
                     </Link>
                 </div>
 
-                <div className='flex flex-col gap-2 w-[368px]'>
+                <div className='flex flex-col gap-4 w-[368px]'>
                     <h1 className='font-bold text-lg'>Quick Links</h1>
                     <Link href={'/'} >
                         <p className='hover:opacity-80'>Home</p>

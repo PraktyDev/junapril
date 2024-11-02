@@ -10,8 +10,8 @@ const containerStyle = {
 }
 
 const center = {
-  lat: 43.75616455078125,
-  lng: -79.2751693725586,
+  lat: 43.75620662274432,
+  lng: -79.27516410928519,
 }
 
 export default function GoogleMapComponent() {

@@ -37,9 +37,25 @@ export default function ChatForm() {
   const { isDirty, isValid, isSubmitting, isSubmitSuccessful } = form.formState
  
   const onSubmit = async (values) => {
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+
+    const data = {
+      service_id: serviceId,
+      template_id: templateId,
+      user_id: publicKey,
+      template_params: {
+        from_name: values.name,
+        from_email: values.email,
+        to_name: 'Junapril Solutions Ltd.',
+        message: values.message,
+      }
+    }
+
     try {
-    //   await axios.post(`endpoint`, values)
-      toast('Message sent', values)
+      await axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
+      toast('Message sent')
     } catch (error) {
       toast("Couldn't send, try again later")
     }

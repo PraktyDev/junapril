@@ -58,7 +58,7 @@ const page = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-4 tablet:gap-20 laptop:grid-cols-1 justify-between mt-4">
-            <AboutImageCard src='/images/itcs.png' text='IT CONSULTANT SOLUTION' alt='IT consultant solution'/>
+            <AboutImageCard src='/images/itcs.png' text='IT CONSULTING SOLUTIONS' alt='IT consultant solution'/>
             <AboutImageCard src='/images/itrec.png' text='RECRUITMENT' alt='IT recruitment'/>
             <AboutImageCard src='/images/itecom.png' text='E-COMMERCE' alt='eCommerce'/>
             <AboutImageCard src='/images/ithpr.png' text='HEALTH PRIVACY RECORD' alt='health privacy record'/>

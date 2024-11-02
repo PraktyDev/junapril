@@ -46,10 +46,11 @@ const page = () => {
           <Flicker text='Home' />
       </div>
 
-      <div className='grid grid-cols-2 laptop:grid-cols-4 gap-4 justify-center mx-auto'>
+      <div className='grid grid-cols-2 laptop:grid-cols-5 gap-4 justify-center mx-auto'>
         <ImageCard src='/images/itconsult.png' text='IT CONSULTING' alt='IT consult' />
         <ImageCard src='/images/itrecruit.png' text='RECRUITMENT' alt='recruitment' />
         <ImageCard src='/images/ittraining.png' text='TRAINING' alt='training' />
+        <ImageCard src='/images/hprc.png' text='HEALTH RECORD PRIVACY' alt='health record privacy' />
         <ImageCard src='/images/ecom.png' text='E-COMMERCE' alt='ecommerce' />
       </div>
 

@@ -24,7 +24,7 @@ const ServiceCard = ({ src, title, desc, href}) => {
         </div>
         <CardHeader className='flex flex-col'>
             <CardTitle>{title}</CardTitle>
-            <CardDescription className='text-white text-justify leading-5 laptop:leading-6'>{desc}</CardDescription>
+            <CardDescription className='text-white text-left leading-5 laptop:leading-6'>{desc}</CardDescription>
         </CardHeader>
         <CardFooter className=''>
           <Link  href={href}>
