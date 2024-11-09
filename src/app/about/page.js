@@ -62,6 +62,7 @@ const page = () => {
             <AboutImageCard src='/images/itrec.png' text='RECRUITMENT' alt='IT recruitment'/>
             <AboutImageCard src='/images/itecom.png' text='E-COMMERCE' alt='eCommerce'/>
             <AboutImageCard src='/images/ithpr.png' text='HEALTH PRIVACY RECORD' alt='health privacy record'/>
+            <AboutImageCard src='/images/ittraining.png' text='TRAINING' alt='training'/>
         </div>
       </div>
     </section>

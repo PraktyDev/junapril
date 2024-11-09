@@ -13,6 +13,15 @@ module.exports = {
 		'desktop': '1280px',
 	},
   	extend: {
+		animation: {
+			'text-blink': 'text-blink 1.1s linear infinite alternate',
+		},
+		keyframes: {
+			'text-blink': {
+			'0%': { color: 'white' },
+			'100%': { color: 'black' },
+			},
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

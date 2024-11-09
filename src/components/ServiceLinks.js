@@ -15,7 +15,7 @@ const ServiceLinks = ({title, content}) => {
         </div>
       </PopoverTrigger>
       <PopoverContent className='laptop:absolute laptop:left-64 laptop:-top-16'>
-        <div className='text-center font-semibold'>{content}</div>
+        <div className='text-left'>{content}</div>
       </PopoverContent>
     </Popover>
   )

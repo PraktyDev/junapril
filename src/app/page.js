@@ -10,7 +10,7 @@ const page = () => {
     const texts = [
       "Welcome to Junapril Solutions Ltd",
       "Compliance Consulting for Business",
-      "Health Record Privacy ",
+      "Health Record Privacy",
     ];
   
     const [currentTextIndex, setCurrentTextIndex] = useState(0)
@@ -74,7 +74,7 @@ const page = () => {
         <ServiceCard href='/products/health-record-policy' src='/images/hprc.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
         <ServiceCard href='/products/training' src='/images/cc.png' title='TRAINING' desc='Compliance Consulting helps organizations navigate regulatory requirements, manage risk and ensure adherence to laws and standards.' />
         <ServiceCard href='/products/recruitment' src='/images/rct.png' title='RECRUITMENT' desc='Recruitment is the process of finding, attracting and selecting the best candidates for a job opening.' />
-        <ServiceCard href='/products/e-commerce' src='/images/eCommerce.png' title='E-COMMERCE SOLUTION' desc='E-commerce solutions typically offers these functions 1. Website design and development 2. Product catalog management 3. Shopping Cart and Checkout etc.' />
+        <ServiceCard  href='/products/e-commerce' src='/images/eCommerce.png' title='E-COMMERCE SOLUTION' desc='E-commerce solutions typically offers these functions 1. Website design and development 2. Product catalog management 3. Shopping Cart and Checkout etc.' />
       </div>
     </section>
   )
