@@ -14,7 +14,7 @@ module.exports = {
 	},
   	extend: {
 		animation: {
-			'text-blink': 'text-blink 1.1s linear infinite alternate',
+			'text-blink': 'text-blink 1.2s linear infinite alternate',
 		},
 		keyframes: {
 			'text-blink': {

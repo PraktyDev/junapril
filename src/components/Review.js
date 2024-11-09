@@ -33,7 +33,7 @@ const Review = () => {
           <CarouselContent>
             {reviews.map((review, index) => (
               <CarouselItem key={index}>
-                <Card className="bg-transparent border-none">
+                <Card className="bg-transparent border-none shadow-none">
                   <CardContent className="p-1">
                     <p className=' text-center text-md font-semibold'>{review.review}</p>
                   </CardContent>
