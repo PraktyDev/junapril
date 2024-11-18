@@ -4,7 +4,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     <div className='flex flex-col'>
-        <ProductHeader src="bg-[url('/images/homehero.png')]" title='Cloud Architecture Design Services' />
+        <ProductHeader src="bg-[url('/images/head5.png')]" title='Cloud Architecture Design Services' />
 
         <div className='flex flex-col px-4 gap-4 py-2'>
 

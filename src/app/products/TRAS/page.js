@@ -4,7 +4,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     <div className='flex flex-col'>
-        <ProductHeader src="bg-[url('/images/homehero.png')]" title='Threat Risk Assessment (TRA) Services' />
+        <ProductHeader src="bg-[url('/images/head2.png')]" title='Threat Risk Assessment (TRA) Services' />
 
         <div className='flex flex-col px-4 gap-4 py-2'>
 
@@ -80,7 +80,7 @@ const page = () => {
                 </div>
             </span>
 
-            <div className="py-4"><Image className="w-full h-[500px] rounded-3xl object-cover" src='/images/tras.png' alt="" width={1000} height={1000} /></div>
+            <div className="py-4"><Image className="w-full h-[500px] rounded-3xl object-cover" src='/images/prod2.png' alt="" width={1000} height={1000} /></div>
 
             <p className='font-semibold'>Why Choose Junapril Solutions Ltd for TRA?</p>
 

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     <div className='flex flex-col'>
-        <ProductHeader src="bg-[url('/images/productecommerce.png')]"  title='Business Continuity and Disaster Recovery as a Service (BCDRaaS)' />
+        <ProductHeader src="bg-[url('/images/head1.png')]"  title='Business Continuity and Disaster Recovery as a Service (BCDRaaS)' />
         <div className='flex flex-col px-4 gap-4 py-2'>
             <span className=''>At Junapril Solutions Ltd, we understand the devastating impact that unexpected disruptions can have on your business operations. Whether it's a natural disaster, cyberattack, or system failure, being prepared with a comprehensive Business Continuity and Disaster Recovery (BCDR) plan is essential to minimize downtime and protect your critical assets. Our BCDR as a Service solutions are designed to keep your business running as smoothly as possible; no matter what challenges arise.</span>
             
@@ -71,7 +71,7 @@ const page = () => {
                 </div>
             </span>
 
-            <div className="py-4"><Image className="w-full h-[500px] rounded-3xl object-cover" src='/images/bisconHero.png' alt="" width={1000} height={1000} /></div>
+            <div className="py-4"><Image className="w-full h-[500px] rounded-3xl object-cover" src='/images/prod1.png' alt="" width={1000} height={1000} /></div>
 
             <p className='font-semibold'>Why Choose Junapril Solutions Ltd for BCDR?</p>
 

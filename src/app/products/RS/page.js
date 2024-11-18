@@ -4,7 +4,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     <div className='flex flex-col'>
-        <ProductHeader src="bg-[url('/images/homehero.png')]" title='Recruitment Solutions' />
+        <ProductHeader src="bg-[url('/images/head14.png')]" title='Recruitment Solutions' />
 
         <div className='flex flex-col px-4 gap-4 py-2'>
 
@@ -81,7 +81,7 @@ const page = () => {
 
             </span>
 
-            <div className="py-4"><Image className="w-full h-[500px] rounded-3xl object-cover" src='/images/prod12.png' alt="" width={1000} height={1000} /></div>
+            <div className="py-4"><Image className="w-full h-[500px] rounded-3xl object-cover" src='/images/prod14.png' alt="" width={1000} height={1000} /></div>
 
             <p className='font-semibold'>Why Choose Junapril Solutions Ltd for Recruitment Services?</p>
 
