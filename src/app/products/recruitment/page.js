@@ -1,5 +1,5 @@
 import Flicker from "@/components/Flicker"
-import { Separator } from "@/components/ui/separator"
+import { ArrowLeft } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { RiWhatsappLine } from "react-icons/ri"
@@ -10,6 +10,9 @@ const page = () => {
     <section className='flex flex-col justify-center gap-4 w-full'>
       <div className="relative flex items-center justify-center laptop:justify-end w-full h-[737px] bg-[url('/images/productrecruit.png')] bg-no-repeat">
           <div className='bg-[#277A80] opacity-40 w-full h-[737px] absolute top-0'></div>
+          <Link href={'/solutions'} className='absolute top-5 left-5 bg-[#277A80] text-white p-2 rounded-full flex items-center justify-center'>
+            <ArrowLeft size={20} />
+          </Link>
           <div className='z-10 container mx-auto flex flex-col items-center justify-center gap-10'>
             <Link href={'https://wa.link/wdgpv6'} className='bg-[#277A80] hover:bg-opacity-90 text-white hover:text-green-300 rounded-sm py-2 px-10 shadow-md flex gap-3 items-center justify-center'>
               <RiWhatsappLine size={20} />
@@ -20,16 +23,14 @@ const page = () => {
           </div>
           <Flicker text='Recruitment' />
       </div>
-      <div className='z-10 -mt-36 tablet:-mt-24 laptop:leading-7 laptop:-mt-28 max-w-2xl bg-[#277A80] rounded-md mx-4 tablet:mx-auto text-white text-center py-4 px-4 laptop:px-8'>
-        Junapril health care organizations to meet their regulatory compliance requirements by providing specialized services developed by proven industry experts. As an industry leader in health care regulatory compliance and compliance operations, Junapril has worked with a broad range of health care organizations, IT Security Solution and E-commerce to design, implement, manage and improve their compliance programs.
-      </div>
-      <div className='w-full bg-[#474040] text-white flex flex-col gap-1 py-4 items-center text-center'>
-        <span className='uppercase font-semibold'>Our Products</span>Explore a whole new world with software solutions tailored to your business needs
+
+      <div className='w-full bg-[#474040] text-white px-4 laptop:px-0 py-4 text-center my-7 laptop:my-14 font-semibold'>
+        See our products page for more information on products that we offer as part of our <br />Recruitment Solution
       </div>
 
-      <div className='flex flex-col gap-4 tablet:gap-20 tablet:max-w-5xl laptop:container mx-2 laptop:mx-auto laptop:px-2'>
-        <div className='flex flex-col tablet:flex-row gap-4'>
-          <div className="tablet:basis-1/3 relative w-full h-56 tablet:h-60 laptop:h-72 overflow-hidden rounded-md group">
+      <div className='flex flex-col gap-4 laptop:gap-20 px-2 laptop:px-5'>
+        <div className='flex flex-col laptop:flex-row gap-4'>
+          <div className="laptop:basis-1/3 relative w-full h-72 tablet:h-96 overflow-hidden rounded-md group">
             <div className="absolute inset-0 transition-transform duration-700 ease-in-out transform scale-110 group-hover:scale-100">
               <Image
                 src='/images/itrecruit.png'
@@ -39,29 +40,23 @@ const page = () => {
                 className="rounded-md"
               />
             </div>
-            <p className="absolute bottom-0 left-0 right-0 text-center text-white text-md font-bold z-10 bg-[#47404090] flex justify-center items-center py-1">Recruitment</p>
+            <p className="absolute bottom-0 left-0 right-0 text-center h-20 text-white text-md font-bold z-10 bg-[#47404090] flex justify-center items-center py-1">Recruitment</p>
           </div>
-          <p className='tablet:basis-2/3 text-justify'>
-            1. Job posting and advertising<br />
-            2. Candidate sourcing and screening<br />
-            3. Resume and application review<br />
-            4. Interviews (phone, video, in-person)<br />
-            5. Background checks and verification<br />
-            6. Candidate selection and shortlisting<br />
-            7. Offer extension and negotiation<br />
-            8. Onboarding and orientation<br />
-            9. Compliance with labor laws and regulations<br />
-            10. Data management and reporting<br /><br />
-            Are you looking to recruit talent for your business or seeking recruitment services?
-          </p>
+          <div className='laptop:basis-2/3 flex flex-col gap-2'>
+            <span className="font-semibold">RECRUITMENT</span>
+            <span className="">Our recruitment solutions are built on a foundation of industry knowledge and a keen understanding of workforce dynamics. We specialize in connecting organizations with top talent across various fields, including technology, healthcare, and finance. Our recruitment experts utilize innovative sourcing techniques and data-driven methodologies to identify candidates who not only possess the necessary skills but also align with our clients' organizational culture and values.</span>
+            <span className="font-semibold">Our Recruitment Solution offers a combination of the following services:</span>
+            <ul className='flex flex-col space-y-2 list-disc list-inside'>
+                <li className=''>Talent Acquisition Strategy Development</li>
+                <li className=''>Job Advertising and Candidate Sourcing</li>
+                <li className=''>Screening and Assessment</li>
+                <li className=''>Interview Coordination and Support</li>
+                <li className=''>Offer Negotiation and Onboarding Support</li>
+                <li className=''>Recruitment Analytics and Reporting</li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <div className='w-full bg-[#D9D9D9] text-white flex flex-col gap-1 py-4 items-center text-center mt-10 laptop:mt-20 mb-5'>
-        <Separator className="bg-[#277A80] rounded-full w-20 h-1" />
-        <span className='uppercase text-[#277A80] font-semibold'>Our Commitment</span>
-        <span className='text-black'>Junapril helping organizations protect critical assets is our only business.</span>
-      </div>
+        </div>
     </section>
   )
 }

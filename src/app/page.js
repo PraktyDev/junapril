@@ -70,8 +70,8 @@ const page = () => {
       </div>
 
       <div className='grid grid-cols-1 tablet:grid-cols-2 gap-4 laptop:mt-5 mx-2 laptop:container laptop:mx-auto'>
-        <ServiceCard href='/products/it-consulting' src='/images/card1.png' title='IT CONSULTING' desc='At Junapril Solutions Ltd, we understand that technology is the backbone of your business.' />
-        <ServiceCard href='/products/health-record-policy' src='/images/hprc.png' title='HEALTH RECORD PRIVACY' desc='In the healthcare sector, safeguarding patient information is paramount.' />
+        <ServiceCard href='/products/it-consulting' src='/images/card1.png' title='IT CONSULTING' desc='At Junapril Solutions Ltd, we understand that technology is the backbone of your business. Our IT consulting services are designed to help you harness the power of technology to drive efficiency, innovation, and growth.' />
+        <ServiceCard href='/products/health-record-policy' src='/images/hprc.png' title='HEALTH RECORD PRIVACY' desc='In the healthcare sector, safeguarding patient information is paramount. Our health record privacy solutions are designed to help healthcare organizations comply with regulations while implementing robust security measures to protect sensitive data.' />
         <ServiceCard href='/products/training' src='/images/cc.png' title='TRAINING' desc='In an ever-evolving technological landscape, continuous learning and development are crucial for organizations looking to stay competitive and secure.' />
         <ServiceCard href='/products/recruitment' src='/images/rct.png' title='RECRUITMENT' desc='Our recruitment solutions are built on a foundation of industry knowledge and a keen understanding of workforce dynamics.' />
         <ServiceCard  href='/products/e-commerce' src='/images/eCommerce.png' title='E-COMMERCE' desc='In the rapidly evolving e-commerce landscape, we provide expert guidance that empowers businesses to thrive online.' />

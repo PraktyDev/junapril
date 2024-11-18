@@ -6,16 +6,16 @@ import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 import Flicker from "@/components/Flicker"
 import { useEffect, useState } from "react"
+import SolutionReferCard from "@/components/SolutionReferCard"
+import SwipeCard from "@/components/SwipeCard"
 
 const page = () => {
     const texts = [
-        "Risk Assessments",
-        "IT Audits Services",
-        "Securities Awareness & Training",
-        "Remediation Planning & Implementation",
-        "Supply Chain Risk Management",
-        "Technical Writing",
-        "Compliance Framework Implementation",
+        "IT Consulting Solution",
+        "E-Commerce Solution",
+        "Recruitment",
+        "Training",
+        "Health Record Privacy",
       ];
     
       const [currentTextIndex, setCurrentTextIndex] = useState(0)
@@ -44,8 +44,8 @@ const page = () => {
             >
                 Get in Touch
             </Link>
-            <div className="bg-[#1BC9FA] rounded-sm laptop:rounded-lg py-4 laptop:py-8 tablet:max-w-3xl laptop:max-w-6xl w-full mx-auto bg-opacity-50 cursor-default shadow-lg">
-            <div className={`text-3xl laptop:text-4xl text-center text-black font-bold transition-opacity duration-500 ${
+            <div className="bg-black rounded-sm laptop:rounded-lg py-2 laptop:py-8 tablet:max-w-3xl  w-full mx-auto bg-opacity-70 cursor-default shadow-lg">
+            <div className={`text-3xl laptop:text-4xl text-center text-white font-bold transition-opacity duration-500 ${
                 fade ? "opacity-100" : "opacity-0"
               }`}>
                 {texts[currentTextIndex]}
@@ -55,14 +55,31 @@ const page = () => {
           <Flicker text='Solutions' /> 
       </div>
 
-        <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between place-items-center mx-4 tablet:mx-10'>
+      {/* <div className="flex gap-5 items-center justify-center py-8 font-semibold">
+          <Separator className='w-10 bg-black rounded-2xl' />
+          <p className="text-base laptop:text-lg">OUR BEST SOLUTIONS</p>
+          <Separator className='w-10 bg-black rounded-2xl' />
+      </div> */}
+
+        {/* <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4 justify-between place-items-center mx-4 tablet:mx-10'>
             <SolutionServiceCard href='/products/it-consulting' src='/images/card1.png' title='IT SECURITIES CONSULTING' desc='We understand the critical importance of safeguarding your digital assets and protecting your organization from cyber threats. Our team of experienced security professionals offers comprehensive consulting services to assess, design, and implement robust cybersecurity strategies tailored to your unique business needs.' />
             <SolutionServiceCard href='/products/health-record-policy' src='/images/hprc.png' title='HEALTH RECORD PRIVACY' desc='Health Record Privacy is essential to protect patients, sensitive medical information. examples: Confidentiality, Integrity and Availability.' />
             <SolutionServiceCard href='/products/training' src='/images/cc.png' title='TRAINING' desc='Training in IT Consulting, E-commerce, and Health Record Privacy typically covers...' />
             <SolutionServiceCard href='/products/recruitment' src='/images/rct.png' title='RECRUITMENT' desc='Recruitment is the process of finding, attracting and selecting the best candidates for a job opening.' />
-        </div>
+        </div> */}
 
-        <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-4 mx-4'>
+        <SwipeCard />
+
+
+
+        <div className="bg-[#D9D9D9] laptop:place-content-center laptop:place-items-center grid gap-3 laptop:gap-20 grid-cols-1 tablet:grid-cols-2 pt-5 pb-10 laptop:pb-40 mb-5 laptop:mb-10 px-10">
+          <SolutionReferCard src={'/images/producthealth.png'} title="Health Record Policy" />
+          <SolutionReferCard src={'/images/productconsult.png'} title="IT Consulting Solution" />
+          <SolutionReferCard src={'/images/ittraining.png'} title="Training" />
+          <SolutionReferCard src={'/images/productecom.png'} title="E-Commerce" />
+          <SolutionReferCard src={'/images/itrecruit.png'} title="Recruitment" />
+        </div>
+        {/* <div className='grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-4 mx-4'>
             <div className='flex flex-col gap-4'>
                 <SolutionCard src='/images/risk.png' title='Risk Assessment' desc="We provide expert Risk Assessment services tailored to assist organizations in identifying and mitigating potential risks across their operations. Our systematic approach involves evaluating a range of factors, including cybersecurity threats, regulatory compliance, financial risks, and operational vulnerabilities. We leverage industry-standard controls and frameworks, such as NIST, ISO, and COBIT, to ensure comprehensive risk assessment coverage. Through our thorough analysis and evaluation, we deliver actionable insights and recommendations to strengthen risk management strategies and enhance overall resilience." />
                 <SolutionCard src='/images/remediation.png' title='Remediation Planning & Implementation' desc="Junapril Solutions offers comprehensive Remediation Planning and Implementation services, utilizing industry-leading methodologies and expertise to address security vulnerabilities and mitigate risks effectively. Our tailored approach encompasses thorough assessment, prioritized remediation planning, and swift implementation of security controls and measures to strengthen the organization's cybersecurity posture. With a focus on continuous improvement and proactive risk management, we enable organizations to achieve rapid and sustainable remediation outcomes, ensuring resilience against evolving cyber threats." />
@@ -91,7 +108,7 @@ const page = () => {
             <Separator className="bg-black rounded-full w-20 h-1" />
             <span className='uppercase text-black font-semibold'>Our Solution</span>
             <span className='text-black max-w-2xl mx-4 tablet:mx-auto'>Access expertise that enables you to simplify, scale, and level up your security posture no matter where you are on your security maturity journey.</span>
-        </div>
+        </div> */}
     </section>
   )
 }
