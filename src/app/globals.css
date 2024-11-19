@@ -59,24 +59,8 @@
 
 
 @keyframes productBgSlide {
-  0%, 20% {
+  0%, 100% {
     background-image: url('/images/prod6.png');
-    opacity: 1;
-  }
-  24%, 41% {
-    background-image: url('/images/biscon.png');
-    opacity: 1;
-  }
-  45%, 61% {
-    background-image: url('/images/producttrain.png');
-    opacity: 1;
-  }
-  65%, 80% {
-    background-image: url('/images/productrecruit.png');
-    opacity: 1;
-  }
-  87%, 100% {
-    background-image: url('/images/productecommerce.png');
     opacity: 1;
   }
 }
@@ -116,11 +100,11 @@
     opacity: 1;
   }
   45%, 61% {
-    background-image: url('/images/producttrain.png');
+    background-image: url('/images/cc.png');
     opacity: 1;
   }
   65%, 80% {
-    background-image: url('/images/productrecruit.png');
+    background-image: url('/images/eCommerce.png');
     opacity: 1;
   }
   87%, 100% {
