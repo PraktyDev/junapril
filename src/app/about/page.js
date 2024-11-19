@@ -1,3 +1,4 @@
+"use client"
 import AboutCard from "@/components/AboutCard";
 import AboutImageCard from "@/components/AboutImageCard";
 import Link from "next/link";
@@ -9,19 +10,55 @@ import {
   } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator";
 import Flicker from "@/components/Flicker";
+import { useEffect, useState } from "react"
 
 const page = () => {
+  const texts = [
+    "Skilled",
+    "Health Record Privacy,",
+    "ECommerce",
+    "IT Consulting",
+  ]
+
+  const text2 = [
+    "Recruiters",
+    "And Compliance Consulting",
+    "Solutions",
+    "And Compliance",
+  ];
+
+  const [currentTextIndex, setCurrentTextIndex] = useState(0)
+  const [currentTextIndex2, setCurrentTextIndex2] = useState(0)
+  const [fade, setFade] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false)
+      setTimeout(() => {
+        setCurrentTextIndex((prev) => (prev + 1) % texts.length)
+        setCurrentTextIndex2((prev) => (prev + 1) % text2.length)
+        setFade(true)
+      }, 350)
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [texts.length]);
+
   return (
     <>
     <section className="flex flex-col justify-center gap-4">
-      <div className="relative flex items-center justify-between w-full h-screen bg-[url('/images/aboutheroimg.png')] bg-no-repeat">
+      <div className="relative flex items-center justify-between w-full h-screen animate-aboutBgSlide bg-no-repeat">
         <div className="bg-black opacity-20 w-full h-screen absolute top-0"></div>
         <div className="container mx-auto flex flex-col laptop:flex-row w-full justify-center laptop:justify-between items-center gap-14 laptop:gap-0">
           <div className="z-10 flex flex-col items-center laptop:items-start gap-4 laptop:gap-6">
             <Separator className="bg-white rounded-lg w-20 laptop:w-36 h-1 laptop:h-2" />
-            <h1 className="text-5xl laptop:text-6xl text-center laptop:text-left  text-white">
-              <span className="font-bold">Skilled</span> <br />
-              Recruiters
+            <h1
+              className={`text-4xl flex flex-col tablet:text-5xl laptop:text-6xl w-full laptop:w-[700px] text-white text-center laptop:text-left font-bold transition-opacity duration-500 ${
+                fade ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {texts[currentTextIndex]}
+              <span className="font-light text-3xl">{text2[currentTextIndex2]}</span>
             </h1>
           </div>
           <Link
@@ -51,7 +88,7 @@ const page = () => {
             <Card className='flex flex-col justify-between h-auto rounded-sm border-none shadow-none'>
                 <CardHeader className='flex flex-col gap-4'>
                     <CardTitle className='text-center text-base laptop:text-lg text-white uppercase py-4 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 rounded-md'>Why Work with Junapril Solutions?</CardTitle>
-                    <CardDescription className='text-left text-base laptop:text-lg'>
+                    <div className='text-left text-base laptop:text-lg text-muted-foreground'>
                     <li className='font-semibold'>Expertise You Can Trust:</li> Our team of certified IT consultants brings years of industry experience and a proven track record of success across various sectors.
                     <br /><br />
                     <li className='font-semibold'>Customized Solutions:</li> We tailor our services to meet your unique business needs and ensure that you get the most value from your technology investments.
@@ -61,7 +98,7 @@ const page = () => {
                     <li className='font-semibold'>End-to-End Support:</li> From strategic planning to implementation and ongoing support, we are here to assist you throughout your IT journey.
                     <br /><br />
                     <li className='font-semibold'>Focus on Security and Compliance:</li> We prioritize your data security and ensure that your systems comply with industry standards and regulations.
-                    </CardDescription>
+                    </div>
                 </CardHeader>
             </Card>
         </div>
