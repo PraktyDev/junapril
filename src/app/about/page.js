@@ -73,15 +73,24 @@ const page = () => {
 
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 container mx-auto place-items-center">
         <div className="flex flex-col gap-2 mx-4">
-          <AboutCard
+          {/* <AboutCard
             title="WHO WE ARE"
             desc="Welcome to Junapril Solutions Ltd, your trusted partner in IT security consulting, recruitment, and  eCommerce solutions. Established with a commitment to excellence,  Junapril Solutions combines expertise, innovation, and dedication to  deliver unparalleled services to our clients across various industries. We specialize in cutting-edge IT Security and comprehensive health record privacy consulting services. Our aim is to assist enterprises in safeguarding their Information assets and data -  including Patient Health Information (PHI) - through governance and a proactive risk management approach to reduce security risks, improve data protection, ensure compliance with the highest industry standards and laws, such as HIPAA, GDPR, and ISO/IEC 27001, and preserve client confidence."
-          />
+          /> */}
+            <Card className='flex flex-col justify-between h-auto rounded-sm border-none shadow-none'>
+                <CardHeader className='flex flex-col gap-4'>
+                    <CardTitle className='text-center text-base laptop:text-lg text-white uppercase py-4 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 rounded-md'>WHO WE ARE</CardTitle>
+                    <CardDescription className='text-left text-base laptop:text-lg flex flex-col'>
+                      <span>Welcome to Junapril Solutions Ltd, your trusted partner in IT security consulting, recruitment, eCommerce, Data Privacy and Training Solution. Established with a commitment to excellence, Junapril Solutions combines expertise, innovation, and dedication to deliver unparalleled services to our clients across various industries.</span>
+                      <span>Our aim is to assist enterprises in safeguarding their Information assets and data - including Patient Health Information (PHI) - through governance and a proactive risk management approach to reduce security risks, improve data protection, ensure compliance with the highest industry standards and laws, such as HIPAA, GDPR, and ISO/IEC 27001, and preserve client confidence.</span>
+                    </CardDescription>
+                </CardHeader>
+            </Card>
             <Card className='flex flex-col justify-between h-auto rounded-sm border-none shadow-none'>
                 <CardHeader className='flex flex-col gap-4'>
                     <CardTitle className='text-center text-base laptop:text-lg text-white uppercase py-4 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 rounded-md'>Our Industry Expertise</CardTitle>
-                    <CardDescription className='text-left text-base laptop:text-lg'>
-                     At Junapril Solutions Ltd, we pride ourselves on our deep industry expertise across diverse sectors, enabling us to provide tailored solutions that drive success for our clients. With a focus on IT consulting, e-commerce, recruitment, and health record privacy, our multidisciplinary team combines technical knowledge, strategic insights, and practical experience to address the unique challenges faced by businesses today.
+                    <CardDescription className='text-left text-base laptop:text-lg flex flex-col'>
+                    At Junapril Solutions Ltd, we pride ourselves on our deep industry expertise across diverse sectors, enabling us to provide tailored solutions that drive success for our clients. With a focus on IT consulting, e-commerce, recruitment, health record privacy and Training, our multidisciplinary team combines technical knowledge, strategic insights, and practical experience to address the unique challenges faced by businesses today.
                     </CardDescription>
                 </CardHeader>
             </Card>
@@ -89,15 +98,15 @@ const page = () => {
                 <CardHeader className='flex flex-col gap-4'>
                     <CardTitle className='text-center text-base laptop:text-lg text-white uppercase py-4 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 rounded-md'>Why Work with Junapril Solutions?</CardTitle>
                     <div className='text-left text-base laptop:text-lg text-muted-foreground'>
-                    <li className='font-semibold'>Expertise You Can Trust:</li> Our team of certified IT consultants brings years of industry experience and a proven track record of success across various sectors.
+                    <p className='font-semibold'>Expertise You Can Trust</p> Our team of certified IT consultants brings years of industry experience and a proven track record of success across various sectors.
                     <br /><br />
-                    <li className='font-semibold'>Customized Solutions:</li> We tailor our services to meet your unique business needs and ensure that you get the most value from your technology investments.
+                    <p className='font-semibold'>Customized Solutions</p> We tailor our services to meet your unique business needs and ensure that you get the most value from your technology investments.
                     <br /><br />
-                    <li className='font-semibold'>Commitment to Innovation:</li> We stay on the cutting edge of technology trends and bring the latest innovations to your organization.
+                    <p className='font-semibold'>Commitment to Innovation</p> We stay on the cutting edge of technology trends and bring the latest innovations to your organization.
                     <br /><br />
-                    <li className='font-semibold'>End-to-End Support:</li> From strategic planning to implementation and ongoing support, we are here to assist you throughout your IT journey.
+                    <p className='font-semibold'>End-to-End Support</p> From strategic planning to implementation and ongoing support, we are here to assist you throughout your IT journey.
                     <br /><br />
-                    <li className='font-semibold'>Focus on Security and Compliance:</li> We prioritize your data security and ensure that your systems comply with industry standards and regulations.
+                    <p className='font-semibold'>Focus on Security and Compliance</p> We prioritize your data security and ensure that your systems comply with industry standards and regulations.
                     </div>
                 </CardHeader>
             </Card>
@@ -118,8 +127,7 @@ const page = () => {
         <CardHeader className='flex flex-col gap-4'>
             <CardTitle className='text-center uppercase text-lg laptop:text-xl laptop:my-5'>Mission Statement</CardTitle>
             <CardDescription className='text-center text-base laptop:text-xl text-black'>
-             Our mission is to empower businesses with cutting-edge IT consulting services and innovative e-commerce solutions. We are committed to delivering exceptional technology strategies and seamless digital platforms that drive efficiency, scalability, and success. By leveraging our expertise and a customer-centric approach, we aim to transform challenges into opportunities, helping our clients thrive in a dynamic digital landscape while fostering long-term partnerships built on trust, innovation, and excellence.
-            </CardDescription>
+            Our mission is to empower businesses with cutting-edge IT consulting services and innovative e-commerce solutions. We are committed to delivering exceptional technology strategies and seamless digital platforms that drive efficiency, scalability, and success. By leveraging our expertise and a customer-centric approach, we aim to transform challenges into opportunities, helping our clients thrive in a dynamic digital landscape while fostering long-term partnerships built on trust, innovation, and excellence.            </CardDescription>
         </CardHeader>
       </Card>
     </section>
