@@ -60,11 +60,11 @@
 
 @keyframes productBgSlide {
   0%, 20% {
-    background-image: url('/images/biscon.png');
+    background-image: url('/images/prod6.png');
     opacity: 1;
   }
   24%, 41% {
-    background-image: url('/images/producthealth.png');
+    background-image: url('/images/biscon.png');
     opacity: 1;
   }
   45%, 61% {

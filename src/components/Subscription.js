@@ -57,7 +57,7 @@ const Subscription = () => {
         render={({ field }) => (
           <FormItem>
             <FormControl>
-              <Input className='bg-white rounded-none w-[310px]' placeholder="Your Email Address" {...field} />
+              <Input className='bg-white rounded-none laptop:w-[310px]' placeholder="Your Email Address" {...field} />
             </FormControl>
             <FormMessage />
           </FormItem>
