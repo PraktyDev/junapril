@@ -9,7 +9,7 @@ const ProductHeader = ({src, title }) => {
 
   return (
     <section className='flex flex-col justify-center gap-4 w-full'>
-      <div className={`relative flex items-center justify-center laptop:justify-end w-full h-[705px] bg-no-repeat ${src}`}>
+      <div className={`relative flex items-center justify-center laptop:justify-end w-full h-[705px] bg-no-repeat object-cover ${src}`}>
           <div className='bg-black opacity-50 w-full h-[705px] absolute top-0'></div>
           <Link href={'/products'} className='absolute top-5 left-5 bg-[#277A80] text-white p-2 rounded-full'>
             <ArrowLeft size={20} />
