@@ -46,13 +46,13 @@ const page = () => {
             <span className="font-semibold">RECRUITMENT</span>
             <span className="">Our recruitment solutions are built on a foundation of industry knowledge and a keen understanding of workforce dynamics. We specialize in connecting organizations with top talent across various fields, including technology, healthcare, and finance. Our recruitment experts utilize innovative sourcing techniques and data-driven methodologies to identify candidates who not only possess the necessary skills but also align with our clients' organizational culture and values.</span>
             <span className="font-semibold">Our Recruitment Solution offers a combination of the following services:</span>
-            <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                <li className=''>Talent Acquisition Strategy Development</li>
-                <li className=''>Job Advertising and Candidate Sourcing</li>
-                <li className=''>Screening and Assessment</li>
-                <li className=''>Interview Coordination and Support</li>
-                <li className=''>Offer Negotiation and Onboarding Support</li>
-                <li className=''>Recruitment Analytics and Reporting</li>
+            <ul className='flex flex-col list-disc list-inside'>
+                <li className='pl-4'>Talent Acquisition Strategy Development</li>
+                <li className='pl-4'>Job Advertising and Candidate Sourcing</li>
+                <li className='pl-4'>Screening and Assessment</li>
+                <li className='pl-4'>Interview Coordination and Support</li>
+                <li className='pl-4'>Offer Negotiation and Onboarding Support</li>
+                <li className='pl-4'>Recruitment Analytics and Reporting</li>
             </ul>
           </div>
         </div>

@@ -49,51 +49,51 @@ const page = () => {
             <div>
               <p className="font-semibold">1. IT Strategy & Planning</p>
               <p>We work closely with your leadership team to develop a robust IT strategy that aligns with your business objectives. Our consultants provide expert guidance on technology investments, ensuring that your IT roadmap supports your short-term needs and long-term goals.</p>
-              <p className="font-semibold">Our IT Strategy & Planning services include:</p>
-              <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                  <li className=''>Technology assessment and gap analysis</li>
-                  <li className=''>IT roadmap development</li>
-                  <li className=''>Business continuity and disaster recovery planning</li>
-                  <li className=''>Budgeting and resource allocation</li>
+              <p className="font-semibold mt-4">Our IT Strategy & Planning services include:</p>
+              <ul className='flex flex-col list-disc list-inside'>
+                  <li className='pl-4'>Technology assessment and gap analysis</li>
+                  <li className='pl-4'>IT roadmap development</li>
+                  <li className='pl-4'>Business continuity and disaster recovery planning</li>
+                  <li className='pl-4'>Budgeting and resource allocation</li>
               </ul>
             </div>
 
             <div>
               <p className="font-semibold">2. Cloud Solutions & Migration</p>
               <p>Embrace the power of the cloud with our comprehensive cloud consulting and migration services. We help you transition seamlessly to cloud platforms, ensuring minimal disruption and maximum security.</p>
-              <p className="font-semibold">Our Cloud Solutions services include:</p>
-              <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                  <li className=''>Cloud readiness assessment</li>
-                  <li className=''>Cloud architecture design</li>
-                  <li className=''>Migration planning and execution</li>
-                  <li className=''>Hybrid and multi-cloud strategies</li>
-                  <li className=''>Cloud security and compliance </li>
+              <p className="font-semibold mt-4">Our Cloud Solutions services include:</p>
+              <ul className='flex flex-col list-disc list-inside'>
+                  <li className='pl-4'>Cloud readiness assessment</li>
+                  <li className='pl-4'>Cloud architecture design</li>
+                  <li className='pl-4'>Migration planning and execution</li>
+                  <li className='pl-4'>Hybrid and multi-cloud strategies</li>
+                  <li className='pl-4'>Cloud security and compliance </li>
               </ul>
             </div>
 
             <div>
               <p className="font-semibold">3. Cybersecurity Services</p>
               <p>Protect your business from evolving cyber threats with our proactive and strategic cybersecurity solutions. We implement best practices and advanced technologies to safeguard your critical data and systems.</p>
-              <p className="font-semibold">Our Cybersecurity services include:</p>
-              <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                  <li className=''>Risk assessment and management</li>
-                  <li className=''>Network security and endpoint protection</li>
-                  <li className=''>Security information and event management (SIEM)</li>
-                  <li className=''>Incident response and recovery</li>
-                  <li className=''>Compliance and regulatory support (e.g., GDPR, HIPAA)</li>
+              <p className="font-semibold mt-4">Our Cybersecurity services include:</p>
+              <ul className='flex flex-col list-disc list-inside'>
+                  <li className='pl-4'>Risk assessment and management</li>
+                  <li className='pl-4'>Network security and endpoint protection</li>
+                  <li className='pl-4'>Security information and event management (SIEM)</li>
+                  <li className='pl-4'>Incident response and recovery</li>
+                  <li className='pl-4'>Compliance and regulatory support (e.g., GDPR, HIPAA)</li>
               </ul>
             </div>
 
             <div>
               <p className="font-semibold">4. Infrastructure Optimization</p>
               <p>Maximize the performance of your IT infrastructure with our optimization services. We help you identify inefficiencies, modernize your systems, and implement solutions that enhance productivity and reliability.</p>
-              <p className="font-semibold">Our Infrastructure Optimization services include:</p>
-              <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                  <li className=''>Network design and implementation</li>
-                  <li className=''>Server and storage solutions</li>
-                  <li className=''>Virtualization and consolidation</li>
-                  <li className=''>Performance monitoring and tuning</li>
-                  <li className=''>IT asset management</li>
+              <p className="font-semibold mt-4">Our Infrastructure Optimization services include:</p>
+              <ul className='flex flex-col list-disc list-inside'>
+                  <li className='pl-4'>Network design and implementation</li>
+                  <li className='pl-4'>Server and storage solutions</li>
+                  <li className='pl-4'>Virtualization and consolidation</li>
+                  <li className='pl-4'>Performance monitoring and tuning</li>
+                  <li className='pl-4'>IT asset management</li>
               </ul>
             </div>
           </div>

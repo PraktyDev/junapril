@@ -46,12 +46,12 @@ const page = () => {
             <span className="font-semibold">TRAINING</span>
             <span className="">In an ever-evolving technological landscape, continuous learning and development are crucial for organizations looking to stay competitive and secure. At Junapril Solutions Ltd, we offer comprehensive IT Training Services designed to equip your team with the knowledge and skills necessary to navigate today's digital challenges effectively. Our training programs are tailored to meet the unique needs of Investing in IT training is not just about keeping up with the latest technologies; it's about empowering your workforce to maximize productivity, enhance security, and foster innovation. With well-trained employees, organizations can mitigate risks, ensure compliance, and improve overall operational efficiency.</span>
             <span className="font-semibold">Our IT Training Solution offers a combination of the following services:</span>
-            <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                <li className=''>Customized Training Programs</li>
-                <li className=''>Technical Skills Development</li>
-                <li className=''>Compliance and Security Training</li>
-                <li className=''>Leadership and Soft Skills Training</li>
-                <li className=''>Certification Preparation</li>
+            <ul className='flex flex-col list-disc list-inside'>
+                <li className='pl-4'>Customized Training Programs</li>
+                <li className='pl-4'>Technical Skills Development</li>
+                <li className='pl-4'>Compliance and Security Training</li>
+                <li className='pl-4'>Leadership and Soft Skills Training</li>
+                <li className='pl-4'>Certification Preparation</li>
             </ul>
           </div>
         </div>

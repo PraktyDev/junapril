@@ -46,13 +46,13 @@ const page = () => {
             <span className="font-semibold">E-COMMERCE</span>
             <span className="">In the rapidly evolving e-commerce landscape, we provide expert guidance that empowers businesses to thrive online. Our team has a proven track record of developing successful e-commerce strategies, creating user-friendly platforms, and executing effective digital marketing campaigns. We stay ahead of industry trends, ensuring that our clients can capitalize on new opportunities while delivering exceptional customer experiences.</span>
             <span className="font-semibold">Our E-Commerce Solution offers a combination of the following services:</span>
-            <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                <li className=''>E-Commerce Strategy Development</li>
-                <li className=''>Website Design and Development</li>
-                <li className=''>Payment Processing Solutions</li>
-                <li className=''>Digital Marketing and SEO</li>
-                <li className=''>Customer Experience Optimization</li>
-                <li className=''>E-Commerce Analytics and Reporting</li>
+            <ul className='flex flex-col list-disc list-inside'>
+                <li className='pl-4'>E-Commerce Strategy Development</li>
+                <li className='pl-4'>Website Design and Development</li>
+                <li className='pl-4'>Payment Processing Solutions</li>
+                <li className='pl-4'>Digital Marketing and SEO</li>
+                <li className='pl-4'>Customer Experience Optimization</li>
+                <li className='pl-4'>E-Commerce Analytics and Reporting</li>
             </ul>
           </div>
         </div>

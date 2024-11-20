@@ -71,7 +71,7 @@ const page = () => {
 
             </span>
 
-            <div className="py-4"><Image className="w-full h-[500px] rounded-3xl object-cover" src='/images/prod12.png' alt="" width={1000} height={1000} /></div>
+            <div className="py-4"><Image className="w-full h-[500px] rounded-3xl object-cover" src='/images/producthrp.png' alt="" width={1000} height={1000} /></div>
 
             <p className='font-semibold'>Why Choose Junapril Solutions Ltd for Health Record Privacy?</p>
 

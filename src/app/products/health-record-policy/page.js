@@ -46,12 +46,12 @@ const page = () => {
             <span className="font-semibold">HEALTH RECORD PRIVACY</span>
             <span className="">In the healthcare sector, safeguarding patient information is paramount. Our health record privacy solutions are designed to help healthcare organizations comply with regulations while implementing robust security measures to protect sensitive data. Our team is well-versed in HIPAA compliance and best practices for privacy management, providing our clients with the expertise needed to navigate the complexities of health information security.</span>
             <span className="font-semibold">Our Health Record Privacy Solution offers a combination of the following services:</span>
-            <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                <li className=''>Regulatory Compliance Assessment</li>
-                <li className=''>Privacy Policy Development</li>
-                <li className=''>Data Security and Risk Management</li>
-                <li className=''>Employee Training and Awareness Programs</li>
-                <li className=''>Health Record Incident Response Planning</li>
+            <ul className='flex flex-col list-disc list-inside'>
+                <li className='pl-4'>Regulatory Compliance Assessment</li>
+                <li className='pl-4'>Privacy Policy Development</li>
+                <li className='pl-4'>Data Security and Risk Management</li>
+                <li className='pl-4'>Employee Training and Awareness Programs</li>
+                <li className='pl-4'>Health Record Incident Response Planning</li>
             </ul>
           </div>
         </div>
