@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col mb-40'>
         <ProductHeader src="bg-[url('/images/head3.png')]" title='IT Roadmap Development Services' />
 
         <div className='flex flex-col px-4 gap-4 py-2'>
@@ -14,7 +14,7 @@ const page = () => {
             
             <p className='font-semibold'>What is an IT Roadmap?</p>
 
-            <span className=''>An IT roadmap is a strategic plan that outlines how technology will be used to meet your business objectives over a defined period. It provides a visual representation of your IT strategy, detailing key initiatives, timelines, and resource allocation. An effective IT roadmap ensures your organization is prepared for growth, innovation, and changes in the technology landscape.</span>
+            <span className='-mt-4'>An IT roadmap is a strategic plan that outlines how technology will be used to meet your business objectives over a defined period. It provides a visual representation of your IT strategy, detailing key initiatives, timelines, and resource allocation. An effective IT roadmap ensures your organization is prepared for growth, innovation, and changes in the technology landscape.</span>
             
             <p className='font-semibold'>Our Approach to IT Roadmap Development</p>
 
@@ -22,60 +22,60 @@ const page = () => {
                 <div>
                     <p className='font-semibold'>1. Business Alignment & Goal Setting</p>
                     We begin by understanding your business objectives and strategic vision. Our experts work closely with your leadership team to ensure the IT roadmap aligns with your goals and delivers measurable value.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>Clear understanding of your business goals and technology needs</li>
-                        <li className=''>Identification of key performance indicators (KPIs) to measure success</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>Clear understanding of your business goals and technology needs</li>
+                        <li className='pl-4'>Identification of key performance indicators (KPIs) to measure success</li>
                     </ul>
                 </div>
 
                 <div>
                     <p className='font-semibold'>2. Current State Assessment</p>
                     We assess your existing IT infrastructure, applications, and processes to identify strengths, weaknesses, and opportunities for improvement. This assessment helps us understand your current capabilities and set a baseline for future initiatives.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>Detailed analysis of your current IT environment</li>
-                        <li className=''>Identification of gaps and areas for enhancement</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>Detailed analysis of your current IT environment</li>
+                        <li className='pl-4'>Identification of gaps and areas for enhancement</li>
                     </ul>
                 </div>
 
                 <div>
                     <p className='font-semibold'>3. Technology Trend Analysis</p>
                     Our team analyzes emerging technology trends and assesses their potential impact on your business. We provide insights on the latest innovations and how they can be leveraged to achieve your objectives.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>Evaluation of relevant technology trends</li>
-                        <li className=''>Recommendations on technologies to adopt, monitor, or retire</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>Evaluation of relevant technology trends</li>
+                        <li className='pl-4'>Recommendations on technologies to adopt, monitor, or retire</li>
                     </ul>
                 </div>
 
                 <div>
                     <p className='font-semibold'>4. Prioritization of Initiatives</p>
                     We prioritize IT initiatives based on their potential impact, cost, and alignment with your strategic goals. Our team ensures that high-value projects are given priority while keeping an eye on future opportunities.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>A ranked list of IT initiatives with clear justifications</li>
-                        <li className=''>Resource allocation and budget estimates for each initiative</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>A ranked list of IT initiatives with clear justifications</li>
+                        <li className='pl-4'>Resource allocation and budget estimates for each initiative</li>
                     </ul>
                 </div>
 
                 <div>
                     <p className='font-semibold'>5. Roadmap Development & Visualization</p>
                     We create a detailed IT roadmap that outlines key projects, timelines, milestones, and deliverables. Our visual representation makes it easy to communicate the plan to stakeholders and track progress over time.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>A comprehensive, easy-to-understand IT roadmap</li>
-                        <li className=''>Timeline for implementation, including short-term and long-term initiatives</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>A comprehensive, easy-to-understand IT roadmap</li>
+                        <li className='pl-4'>Timeline for implementation, including short-term and long-term initiatives</li>
                     </ul> 
                 </div>
 
                 <div>
                     <p className='font-semibold'>6. Implementation Planning & Support</p>
                     Our team provides guidance on executing the IT roadmap, from selecting vendors to managing projects and measuring outcomes. We offer ongoing support to ensure your initiatives are implemented successfully.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>Implementation guidance and best practices</li>
-                        <li className=''>Project management support and performance tracking</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>Implementation guidance and best practices</li>
+                        <li className='pl-4'>Project management support and performance tracking</li>
                     </ul> 
                 </div>
             </span>
@@ -84,7 +84,7 @@ const page = () => {
 
             <p className='font-semibold'>Why Choose Junapril Solutions Ltd for IT Roadmap Development?</p>
 
-            <ul className='flex flex-col space-y-2 list-disc list-inside'>
+            <ul className='flex flex-col list-disc list-outside pl-8 -mt-4'>
                 <li><span className='font-semibold'>Strategic Expertise:</span> Our team has extensive experience in IT strategy and planning, helping organizations transform their technology landscape.</li>
                 <li><span className='font-semibold'>Business-Driven Approach:</span> We focus on aligning technology initiatives with your overall business goals to maximize value and impact.</li>
                 <li><span className='font-semibold'>Tailored Solutions:</span> Every business is unique. We customize our IT roadmap services to meet your specific needs and challenges.</li>
@@ -93,16 +93,16 @@ const page = () => {
             
             <p className='font-semibold'>Benefits of an IT Roadmap</p>
 
-            <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                <li>Clear Strategic Direction: Know where you're headed and how technology will support your business growth.</li>
-                <li>Optimized Resource Allocation: Allocate your resources effectively, minimizing waste and maximizing ROI.</li>
-                <li>Improved Decision-Making: Make data-driven decisions with a clear understanding of the impact of technology investments.</li>
-                <li>Reduced Risk: Proactively plan for changes and mitigate risks associated with outdated or misaligned technology.</li>
+            <ul className='flex flex-col list-disc list-outside pl-8 -mt-4'>
+                <li><span className='font-semibold'>Clear Strategic Direction:</span> Know where you're headed and how technology will support your business growth.</li>
+                <li><span className='font-semibold'>Optimized Resource Allocation:</span> Allocate your resources effectively, minimizing waste and maximizing ROI.</li>
+                <li><span className='font-semibold'>Improved Decision-Making:</span> Make data-driven decisions with a clear understanding of the impact of technology investments.</li>
+                <li><span className='font-semibold'>Reduced Risk:</span> Proactively plan for changes and mitigate risks associated with outdated or misaligned technology.</li>
             </ul>
             
             <p className='font-semibold'>Get Started on Your IT Roadmap Today</p>
             
-            <p>Don't let your technology strategy hold you back. With Junapril Solutions Ltd, you can develop a comprehensive IT roadmap that drives innovation, efficiency, and long-term success. Contact us today to schedule a consultation and start planning your technology future.</p>
+            <p className='-mt-4'>Don't let your technology strategy hold you back. With Junapril Solutions Ltd, you can develop a comprehensive IT roadmap that drives innovation, efficiency, and long-term success. Contact us today to schedule a consultation and start planning your technology future.</p>
         </div>
     </div>
   )

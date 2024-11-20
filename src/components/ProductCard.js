@@ -22,7 +22,7 @@ const ProductCard = ({src, title, link}) => {
             <CardDescription className='px-3 py-5'>
                 <span className="flex justify-between items-center gap-4">
                     <span className="font-bold text-black text-base laptop:text-lg">{title}</span>
-                    <Link href={link}>
+                    <Link href={link} className="hover:animate-cursor">
                         <Image
                             className="w-10 h-10 object-cover"
                             alt=""

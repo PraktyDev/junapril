@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col mb-40'>
         <ProductHeader src="bg-[url('/images/head2.png')]" title='Threat Risk Assessment (TRA) Services' />
 
         <div className='flex flex-col px-4 gap-4 py-2'>
@@ -14,7 +14,7 @@ const page = () => {
             
             <p className='font-semibold'>What is a Threat Risk Assessment?</p>
 
-            <span className=''>A Threat Risk Assessment is a systematic approach to identifying and evaluating security threats to an organization's assets, systems, and data. The goal is to understand vulnerabilities, estimate the potential impact of various threats, and prioritize risk mitigation measures. Our TRA services provide you with a clear understanding of the security posture of your organization and the steps needed to address potential risks.</span>
+            <span className='-mt-4'>A Threat Risk Assessment is a systematic approach to identifying and evaluating security threats to an organization's assets, systems, and data. The goal is to understand vulnerabilities, estimate the potential impact of various threats, and prioritize risk mitigation measures. Our TRA services provide you with a clear understanding of the security posture of your organization and the steps needed to address potential risks.</span>
             
             <p className='font-semibold'>Our TRA Process</p>
 
@@ -22,60 +22,60 @@ const page = () => {
                 <div>
                     <p className='font-semibold'>1. Asset Identification & Classification</p>
                     We start by identifying and classifying your organization's critical assets, including physical assets, data, and IT systems. This step ensures that all valuable assets are considered in the risk assessment.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>An inventory of critical assets</li>
-                        <li className=''>Asset classification based on value, sensitivity, and importance</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>An inventory of critical assets</li>
+                        <li className='pl-4'>Asset classification based on value, sensitivity, and importance</li>
                     </ul>
                 </div>
 
                 <div>
                     <p className='font-semibold'>2. Threat Identification</p>
                     Our experts identify potential threats that could impact your assets. This includes both internal and external threats, such as cyberattacks, data breaches, natural disasters, and insider threats.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>A comprehensive list of potential threats</li>
-                        <li className=''>Analysis of threat sources and their capabilities</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>A comprehensive list of potential threats</li>
+                        <li className='pl-4'>Analysis of threat sources and their capabilities</li>
                     </ul>
                 </div>
 
                 <div>
                     <p className='font-semibold'>3. Vulnerability Analysis</p>
                     We assess vulnerabilities in your systems and processes that could be exploited by the identified threats. Our team evaluates your current security measures and identifies gaps that need to be addressed.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>A detailed report on system vulnerabilities</li>
-                        <li className=''>Recommendations for strengthening your security posture</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>A detailed report on system vulnerabilities</li>
+                        <li className='pl-4'>Recommendations for strengthening your security posture</li>
                     </ul>
                 </div>
 
                 <div>
                     <p className='font-semibold'>4. Risk Assessment & Impact Analysis</p>
                     We analyze the likelihood of each threat occurring and the potential impact it could have on your organization. This helps prioritize risks and focus on the most critical areas.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>Risk level assessment for each identified threat</li>
-                        <li className=''>Impact analysis to determine the potential consequences of each risk</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>Risk level assessment for each identified threat</li>
+                        <li className='pl-4'>Impact analysis to determine the potential consequences of each risk</li>
                     </ul>
                 </div>
 
                 <div>
                     <p className='font-semibold'>5. Mitigation Strategies & Recommendations</p>
                     Based on our findings, we develop risk mitigation strategies tailored to your organization. Our recommendations are practical, cost-effective, and aligned with your business objectives.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>Detailed risk mitigation plans</li>
-                        <li className=''>Recommendations for security enhancements and best practices</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>Detailed risk mitigation plans</li>
+                        <li className='pl-4'>Recommendations for security enhancements and best practices</li>
                     </ul> 
                 </div>
 
                 <div>
                     <p className='font-semibold'>6. Reporting & Continuous Monitoring</p>
                     We provide a comprehensive TRA report that outlines our findings, risk levels, and recommended actions. Additionally, we offer ongoing monitoring services to ensure your risk management strategies remain effective and up to date.
-                    <p className='font-semibold'>What We Deliver:</p>
-                    <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                        <li className=''>A detailed Threat Risk Assessment report</li>
-                        <li className=''>Options for ongoing risk monitoring and updates</li>
+                    <p className='font-semibold mt-4'>What We Deliver:</p>
+                    <ul className='flex flex-col list-disc list-inside'>
+                        <li className='pl-4'>A detailed Threat Risk Assessment report</li>
+                        <li className='pl-4'>Options for ongoing risk monitoring and updates</li>
                     </ul> 
                 </div>
             </span>
@@ -84,7 +84,7 @@ const page = () => {
 
             <p className='font-semibold'>Why Choose Junapril Solutions Ltd for TRA?</p>
 
-            <ul className='flex flex-col space-y-2 list-disc list-inside'>
+            <ul className='flex flex-col list-disc list-outside pl-8 -mt-4'>
                 <li><span className='font-semibold'>Expert Analysis:</span> Our experienced security analysts use proven methodologies and advanced tools to conduct thorough risk assessments.</li>
                 <li><span className='font-semibold'>Customized Approach:</span> We tailor our TRA services to meet the specific needs of your organization, considering industry-specific threats and compliance requirements.</li>
                 <li><span className='font-semibold'>Actionable Insights:</span> We don't just identify risks; we provide practical solutions to mitigate them, ensuring your organization is well-protected.</li>
@@ -93,16 +93,16 @@ const page = () => {
             
             <p className='font-semibold'>Benefits of a Threat Risk Assessment:</p>
 
-            <ul className='flex flex-col space-y-2 list-disc list-inside'>
-                <li>Enhanced Security Posture: Understand your vulnerabilities and implement measures to reduce risk.</li>
-                <li>Regulatory Compliance: Meet compliance and regulatory requirements by demonstrating proactive risk management.</li>
-                <li>Cost Savings: Avoid costly breaches and disruptions by addressing risks early on.</li>
-                <li>Informed Decision-Making: Make strategic decisions based on a clear understanding of your organization's risk landscape.</li>
+            <ul className='flex flex-col list-disc list-outside pl-8 -mt-4'>
+                <li><span className='font-semibold'>Enhanced Security Posture:</span> Understand your vulnerabilities and implement measures to reduce risk.</li>
+                <li><span className='font-semibold'>Regulatory Compliance:</span> Meet compliance and regulatory requirements by demonstrating proactive risk management.</li>
+                <li><span className='font-semibold'>Cost Savings:</span> Avoid costly breaches and disruptions by addressing risks early on.</li>
+                <li><span className='font-semibold'>Informed Decision-Making:</span> Make strategic decisions based on a clear understanding of your organization's risk landscape.</li>
             </ul>
             
             <p className='font-semibold'>Schedule Your Threat Risk Assessment Today</p>
             
-            <p>Don't wait for a security incident to occur before taking action. Protect your business by identifying and mitigating risks with a comprehensive Threat Risk Assessment from Junapril Solutions Ltd. Contact us today to schedule your assessment and take the first step toward a more secure future.</p>
+            <p className='-mt-4'>Don't wait for a security incident to occur before taking action. Protect your business by identifying and mitigating risks with a comprehensive Threat Risk Assessment from Junapril Solutions Ltd. Contact us today to schedule your assessment and take the first step toward a more secure future.</p>
         </div>
     </div>
   )
