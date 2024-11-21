@@ -34,8 +34,10 @@ const Subscription = () => {
       const { isDirty, isValid, isSubmitting, isSubmitSuccessful } = form.formState
      
       const onSubmit = async (values) => {
+        const scriptURL = `https://script.google.com/macros/s/AKfycbyxXGmM3Ok0wZx5NpAwgNHBKjI-GypHx8cTVJ9BByrMr4jpG1kfeNM2YZR2fOOEyx6mqQ/exec`
+
         try {
-        //   await axios.post(`endpoint`, values)
+          await axios.post(scriptURL, values, { headers: { "Content-Type": "application/json" } })
           toast('Subcribed', values)
         } catch (error) {
           toast("Couldn't subscribe, try again later")
