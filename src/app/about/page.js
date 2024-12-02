@@ -1,5 +1,4 @@
 "use client"
-import AboutCard from "@/components/AboutCard";
 import AboutImageCard from "@/components/AboutImageCard";
 import Link from "next/link";
 import {
@@ -73,10 +72,6 @@ const page = () => {
 
       <div className="grid grid-cols-1 laptop:grid-cols-2 gap-4 container mx-auto place-items-center">
         <div className="flex flex-col gap-2 mx-4">
-          {/* <AboutCard
-            title="WHO WE ARE"
-            desc="Welcome to Junapril Solutions Ltd, your trusted partner in IT security consulting, recruitment, and  eCommerce solutions. Established with a commitment to excellence,  Junapril Solutions combines expertise, innovation, and dedication to  deliver unparalleled services to our clients across various industries. We specialize in cutting-edge IT Security and comprehensive health record privacy consulting services. Our aim is to assist enterprises in safeguarding their Information assets and data -  including Patient Health Information (PHI) - through governance and a proactive risk management approach to reduce security risks, improve data protection, ensure compliance with the highest industry standards and laws, such as HIPAA, GDPR, and ISO/IEC 27001, and preserve client confidence."
-          /> */}
             <Card className='flex flex-col justify-between h-auto rounded-sm border-none shadow-none'>
                 <CardHeader className='flex flex-col gap-4'>
                     <CardTitle className='text-center text-base laptop:text-lg text-white uppercase py-4 bg-gradient-to-r from-teal-700/95 via-teal-700/50 to-teal-700/40 rounded-md'>WHO WE ARE</CardTitle>

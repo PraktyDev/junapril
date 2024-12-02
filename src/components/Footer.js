@@ -39,11 +39,8 @@ const Footer = () => {
                 <div className='flex flex-col gap-2 basis-1/3 grow'>
                     <h1 className='font-bold text-lg'>Head Office</h1>
                     <p className='text-base laptop:text-lg'>1225 Kennedy Road, Suite 2000, Scarborough, ON M1P 4Y1</p>
-                    <Link href={'mailto:info@junapril.com'} >
-                        <p className='text-base laptop:text-lg text-blue-500 hover:text-blue-400'>info@junapril.com</p>
-                    </Link>
-                    <Link href={'mailto:admin@junapril.com'} >
-                        <p className='text-base laptop:text-lg text-blue-500 hover:text-blue-400'>admin@junapril.com</p>
+                    <Link href={'mailto:contact@junaprilsolutions.com'} >
+                        <p className='text-base laptop:text-lg text-blue-500 hover:text-blue-400'>contact@junaprilsolutions.com</p>
                     </Link>
                 </div>
 

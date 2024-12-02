@@ -51,32 +51,14 @@ export default function ContactForm() {
   const { isDirty, isValid, isSubmitting, isSubmitSuccessful } = form.formState
   
   const onSubmit = async (values) => {
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID
-    const templateId = process.env.NEXT_PUBLIC_TEMPLATE2_ID
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-
-    const data = {
-      service_id: serviceId,
-      template_id: templateId,
-      user_id: publicKey,
-      template_params: {
-        from_firstName: values.firstName,
-        from_lastName: values.lastName,
-        from_title: values.title,
-        from_company: values.company,
-        from_email: values.email,
-        from_phonenumber: values.phonenumber,
-        to_name: 'Junapril Solutions Ltd.',
-        message: values.message,
-      }
-    }
 
     try {
-      await axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
+      await axios.post('/api/send-contact', values)
       toast('Message sent')
     } catch (error) {
       toast("Failed to send, try again")
     }
+
   }
 
   useEffect(()=>{

@@ -42,9 +42,7 @@ const page = () => {
               <p className="flex items-center justify-center rounded-full p-3 bg-[#044B50]"><InboxIcon size={36} /></p>
               <CardTitle className='text-center font-semibold text-xl'>Email</CardTitle>
               <CardDescription className='font-light text-center'>
-                <Link className='text-blue-100 hover:text-blue-50' href='malto:info@junapril.com'>Info@junapril.com</Link>
-                <br />
-                <Link className='text-blue-100 hover:text-blue-50' href='malto:admin@junapril.com'>Admin@junapril.com</Link>
+                <Link className='text-blue-100 hover:text-blue-50' href='malto:contact@junaprilsolutions.com'>contact@junaprilsolutions.com</Link>
               </CardDescription>
           </CardHeader>
         </Card>
