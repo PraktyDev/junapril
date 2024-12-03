@@ -46,7 +46,7 @@ const page = () => {
   return (
     <>
     <section className="flex flex-col justify-center gap-4">
-      <div className="relative flex items-center justify-between w-full h-screen animate-aboutBgSlide bg-no-repeat">
+      <div className="relative flex items-center justify-between w-full h-screen animate-aboutBgSlide bg-no-repeat bg-center laptop:bg-cover">
         <div className="bg-black opacity-20 w-full h-screen absolute top-0"></div>
         <div className="container mx-auto flex flex-col laptop:flex-row w-full justify-center laptop:justify-between items-center gap-14 laptop:gap-0">
           <div className="z-10 flex flex-col items-center laptop:items-start gap-4 laptop:gap-6">

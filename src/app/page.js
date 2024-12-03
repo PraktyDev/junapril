@@ -30,7 +30,7 @@ const page = () => {
 
   return (
     <section className='flex flex-col justify-center gap-4 w-full'>
-      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[800px] bg-[url('/images/homehero.png')] bg-no-repeat">
+      <div className="relative flex items-center justify-center laptop:justify-end w-full h-[800px] bg-[url('/images/homehero.png')] bg-no-repeat bg-center laptop:bg-cover">
           <div className='bg-black opacity-40 w-full h-[800px] absolute top-0'></div>
           <div className='z-10 flex flex-col justify-center laptop:items-end laptop:pr-10 items-center gap-14 '> 
             <h1
