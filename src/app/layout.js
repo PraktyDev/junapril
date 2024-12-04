@@ -20,6 +20,9 @@ const geistMono = localFont({
 export const metadata = {
   title: "Junapril Solutions Ltd.",
   description: "Your trusted partner in IT security, consulting, recruitment and eCommerce solutions",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
